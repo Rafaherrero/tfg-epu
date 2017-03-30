@@ -9,3 +9,4 @@
 *.out 
 *.snm 
 *.toc
+/code/node_modules
