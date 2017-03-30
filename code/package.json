@@ -13,5 +13,6 @@
   },
   "dependencies": {
     "electron-dl": "^1.6.0"
-  }
+  },
+  "license": "GPL-3.0"
 }
