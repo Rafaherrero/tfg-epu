@@ -10,3 +10,4 @@
 *.snm 
 *.toc
 /code/node_modules
+/code/.*
