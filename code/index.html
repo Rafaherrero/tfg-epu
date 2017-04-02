@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" type="image/png" href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="css/pure/pure-min.css">
   <link rel="stylesheet" href="css/pure/grids-responsive-min.css">
   <link rel="stylesheet" href="css/mycss.css" media="screen,projection"/>
@@ -11,11 +11,60 @@
 </head>
 
 <body>
+  
   <div class="pure-g" id="sec-blocky">
     <div class="pure-u-1 pure-u-lg-1-2"><h1>Hello World!</h1></div>
     <div class="pure-u-1 pure-u-lg-1-2"><h1>Hello World!</h1></div>
-    <div class="pure-u-1 pure-u-lg-1-2"><h1>Hello World!</h1></div>
+    
 </div>
+<div class="pure-u-1 pure-u-lg-1-2" id="blocklyArea">
+     </div>
+<div id="blocklyDiv" style="position: absolute"></div>
 
 </body>
+
+<xml id="toolbox" style="display: none">
+  <block type="controls_if"></block>
+  <block type="controls_repeat_ext"></block>
+  <block type="logic_compare"></block>
+  <block type="math_number"></block>
+  <block type="math_arithmetic"></block>
+  <block type="text"></block>
+  <block type="text_print"></block>
+</xml>
+
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+
+<script src="js/blockly/blockly_compressed.js"></script>
+<script src="js/blockly/blocks_compressed.js"></script>
+<script src="js/blockly/msg/js/es.js"></script>
+
+<script>
+  var blocklyArea = document.getElementById('blocklyArea');
+  var blocklyDiv = document.getElementById('blocklyDiv');
+  var workspace = Blockly.inject(blocklyDiv,
+      {toolbox: document.getElementById('toolbox')});
+  var onresize = function(e) {
+    // Compute the absolute coordinates and dimensions of blocklyArea.
+    var element = blocklyArea;
+    var x = 0;
+    var y = 0;
+    do {
+      x += element.offsetLeft;
+      y += element.offsetTop;
+      element = element.offsetParent;
+    } while (element);
+    // Position blocklyDiv over blocklyArea.
+    blocklyDiv.style.left = x + 'px';
+    blocklyDiv.style.top = y + 'px';
+    blocklyDiv.style.width = blocklyArea.offsetWidth + 'px';
+    blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
+  };
+  window.addEventListener('resize', onresize, false);
+  onresize();
+  Blockly.svgResize(workspace);
+</script>
+
 </html>
