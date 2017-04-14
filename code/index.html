@@ -6,31 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="css/pure/pure-min.css">
   <link rel="stylesheet" href="css/pure/grids-responsive-min.css">
+  <link rel="stylesheet" href="css/pure-offset.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/mycss.css" media="screen,projection"/>
+  <link rel="icon" type="image/png" href="img/donut.png">
   <title>EPU-Diet</title>
 </head>
 
 <body>
-  
-  <div class="pure-g" id="sec-blocky">
-    <div class="pure-u-1 pure-u-lg-1-2"><h1>Hello World!</h1></div>
-    <div class="pure-u-1 pure-u-lg-1-2"><h1>Hello World!</h1></div>
-    
-</div>
-<div class="pure-u-1 pure-u-lg-1-2" id="blocklyArea">
+<div id="global_body">
+<div class="pure-u-lg-6-24 offset-lg-1-24">
+  <img class="pure-img" src="img/fruta.jpg">
      </div>
-<div id="blocklyDiv" style="position: absolute"></div>
 
+<div class="pure-u-lg-15-24 offset-lg-1-24" id="blocklyArea" style="height: 80vh">
+     </div>
+
+<div class="pure-u-lg-22-24 offset-lg-1-24" id="level_selector">
+  <P>NIVELES:
+  <button class="button-xlarge pure-button">NIVEL 1</button>
+  <button class="button-xlarge pure-button">NIVEL 2</button>
+  <button class="button-xlarge pure-button">NIVEL 3</button></P>
+     </div>
+
+<div id="blocklyDiv" style="position: absolute"></div>
+</div>
 </body>
 
 <xml id="toolbox" style="display: none">
-  <block type="controls_if"></block>
-  <block type="controls_repeat_ext"></block>
-  <block type="logic_compare"></block>
-  <block type="math_number"></block>
-  <block type="math_arithmetic"></block>
-  <block type="text"></block>
-  <block type="text_print"></block>
+  <category name="Control">
+    <block type="controls_if"></block>
+    <block type="controls_whileUntil"></block>
+    <block type="controls_for">
+  </category>
+  <category name="Logic">
+    <block type="logic_compare"></block>
+    <block type="logic_operation"></block>
+    <block type="logic_boolean"></block>
+  </category>
 </xml>
 
 <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
@@ -66,5 +79,9 @@
   onresize();
   Blockly.svgResize(workspace);
 </script>
+
+<!--footer Todo estose debería poner en una zona no intrusiva
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
 
 </html>

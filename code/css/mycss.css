@@ -7,15 +7,15 @@ html, body {
     height: 99%;
 }
 
-#sec-blocky{
+#level_selector {
+    padding-top: 23px;
     text-align: center;
 }
 
-        .pure-g > div {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        .l-box {
-            padding: 1em;
-        }
+#global_body {
+    padding-top: 20px;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
