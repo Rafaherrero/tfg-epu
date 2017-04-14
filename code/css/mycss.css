@@ -18,4 +18,11 @@ html, body {
 
 .button-xlarge {
     font-size: 125%;
+    padding: 10px 50px;
+}
+
+#level_text {
+    font-size: 175%;
+    font-weight: bold;
+    margin-top: 6px;
 }
