@@ -15,11 +15,11 @@
 
 <body>
 <div id="global_body">
-<div class="pure-u-lg-6-24 offset-lg-1-24">
+<div class="pure-u-lg-6-24 offset-lg-1-24" id="col_izq">
   <img class="pure-img" src="img/fruta.jpg">
      </div>
 
-<div class="pure-u-lg-15-24 offset-lg-1-24" id="blocklyArea" style="height: 80vh">
+<div class="pure-u-lg-15-24 offset-lg-1-24" id="blocklyArea">
      </div>
 
 <div class="pure-u-lg-22-24 offset-lg-1-24" id="level_selector">
@@ -65,7 +65,14 @@
   var blocklyArea = document.getElementById('blocklyArea');
   var blocklyDiv = document.getElementById('blocklyDiv');
   var workspace = Blockly.inject(blocklyDiv,
-      {toolbox: document.getElementById('toolbox')});
+      {toolbox: document.getElementById('toolbox'),
+       zoom:
+         {controls: true,
+          wheel: false,
+          startScale: 1.0,
+          maxScale: 3,
+          minScale: 0.3,
+          scaleSpeed: 1.2}});
   var onresize = function(e) {
     // Compute the absolute coordinates and dimensions of blocklyArea.
     var element = blocklyArea;
@@ -87,8 +94,9 @@
   Blockly.svgResize(workspace);
 </script>
 
-<!--footer Todo estose debería poner en una zona no intrusiva
+<!--footer Todo esto se debería poner en una zona no intrusiva
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<a href="https://www.toptal.com/designers/subtlepatterns/geometry-2/" title="Subtle Patterns"</a>
 -->
 
 </html>

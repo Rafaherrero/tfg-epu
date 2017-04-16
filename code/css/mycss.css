@@ -1,10 +1,11 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-image: url("../img/geometry2.png");
 }
 
 #blocklyArea {
-    height: 99%;
+    height: 80vh;
 }
 
 #level_selector {
@@ -25,4 +26,11 @@ html, body {
     font-size: 175%;
     font-weight: bold;
     margin-top: 6px;
+}
+
+#col_izq{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    height: 80vh;
 }
