@@ -1,13 +1,10 @@
+$(window).resize(function(){location.reload();});
 
+function change_level(num_level){
+    $('[id^=button_level]').attr('class', 'pure-button button-xlarge');
+    $('#button_level'+num_level).attr('class', 'pure-button button-xlarge pure-button-active');
+}
 
-$("#button_level1").click(function() {
-    change_level(1);
-})
-
-$("#button_level2").click(function() {
-    change_level(2);
-})
-
-$("#button_level3").click(function() {
-    change_level(3);
+$("[id^=button_level]").click(function(event) {
+    change_level(event.target.id.slice(-1))
 })
