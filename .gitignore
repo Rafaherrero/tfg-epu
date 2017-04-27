@@ -11,3 +11,4 @@
 *.toc
 /code/node_modules
 /code/.*
+*Thumb*
