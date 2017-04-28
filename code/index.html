@@ -16,7 +16,32 @@
 <body>
 <div id="global_body">
 <div class="pure-u-lg-6-24 offset-lg-1-24" id="col_izq">
-  <img class="pure-img" src="img/fruta.jpg">
+  <div class="pure-u-lg-24-24" id="top_col_izq">
+    <p>Goal: 300kcal</p>
+  </div>
+  <div class="pure-u-lg-24-24" id="medium_col_izq">
+    <div class="pure-u-lg-12-24 col_result">
+      
+      </div>
+      <div class="pure-u-lg-11-24 col_result">
+
+      </div>
+      <div class="pure-u-lg-11-24 col_result">
+
+      </div>
+      <div class="pure-u-lg-11-24">
+        <img src="img/mixer.svg" id="blender">
+      </div>
+  
+  </div>
+  <div class="pure-u-lg-24-24" id="bottom_col_izq">
+    <div class="pure-u-lg-6-24">
+    <img src="img/icons/apple.svg">
+    </div>
+    <div class="pure-u-lg-17-24 inside">
+    <p>= 75kcal</p>
+    </div>
+  </div>
      </div>
 
 <div class="pure-u-lg-15-24 offset-lg-1-24" id="blocklyArea">
@@ -24,23 +49,23 @@
 
 <div class="pure-u-lg-22-24 offset-lg-1-24" id="level_selector">
   <div class="pure-u-lg-3-24">
-  <p id="level_text">Niveles: </p>
+  <p id="level_text">Levels: </p>
   </div>
-  <div class="pure-u-lg-10-24">
+  <div class="pure-u-lg-11-24">
   <div class="pure-button-group" role="group">
-    <button class="pure-button pure-button-active button-xlarge" id="button_level1">Nivel 1</button>
-    <button class="pure-button button-xlarge" id="button_level2">Nivel 2</button>
-    <button class="pure-button button-xlarge" id="button_level3">Nivel 3</button>
+    <button class="pure-button pure-button-active button-xlarge" id="button_level1">Level 1</button>
+    <button class="pure-button button-xlarge" id="button_level2">Level 2</button>
+    <button class="pure-button button-xlarge" id="button_level3">Level 3</button>
 </div>
   </div>
   <div class="pure-u-lg-3-24">
-  <p id="level_text">Ejercicio: </p>
+  <p id="level_text">Exercise: </p>
   </div>
-  <div class="pure-u-lg-6-24">
+  <div class="pure-u-lg-5-24">
     <select id="select_exercise">
-      <option value="nivel1_ejercicio1">Ejercicio 1: plátanos</option>
-      <option value="nivel1_ejercicio2">Ejercicio 2: manzanas</option>
-      <option value="nivel1_ejercicio3">Ejercicio 3: peras</option>
+      <option value="nivel1_ejercicio1">Exercise 1: bananas</option>
+      <option value="nivel1_ejercicio2">Exercise 2: apples</option>
+      <option value="nivel1_ejercicio3">Exercise 3: pears</option>
       </select>
     </div>
     </div>
@@ -51,20 +76,12 @@
 </body>
 
 <footer>
-
+  <p>Rafael Herrero 2017 <a href=""> Licenses</a></p>
 </footer>
 
 <xml id="toolbox" style="display: none">
-  <category name="Control">
-    <block type="controls_if"></block>
-    <block type="controls_whileUntil"></block>
-    <block type="controls_for">
-  </category>
-  <category name="Logic">
-    <block type="logic_compare"></block>
-    <block type="logic_operation"></block>
-    <block type="logic_boolean"></block>
-  </category>
+  <block type="mixer"></block>
+  <block type="fruits"></block>
 </xml>
 
 <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
@@ -75,6 +92,7 @@
 
 <script src="js/blockly/blockly_compressed.js"></script>
 <script src="js/blockly/blocks_compressed.js"></script>
+<script src="blocks/myblocks.js"></script>
 <script src="js/blockly/msg/js/es.js"></script>
 
 <script>
