@@ -106,6 +106,7 @@ footer p, a{
 }
 
 .language_buttons_active{
-    border: solid black;
-    border-width: 0px 0px 2px 0px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
