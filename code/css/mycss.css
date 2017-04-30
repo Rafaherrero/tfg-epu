@@ -18,7 +18,7 @@ footer {
 }
 
 #blocklyArea {
-    height: 75vh;
+    height: 76vh;
 }
 
 #level_selector {
@@ -32,13 +32,13 @@ footer {
 
 .button-xlarge {
     font-size: 125%;
-    padding: 10px 50px;
+    padding: 1.5vh 50px;
 }
 
-#level_text {
+.text_bottom_bar {
     font-size: 175%;
     font-weight: bold;
-    margin-top: 6px;
+    margin-top: 1vh;
 }
 
 #col_izq{
@@ -49,8 +49,8 @@ footer {
 }
 
 #select_exercise{
-    width: 100%;
-    margin-top: 12px;
+    width: 90%;
+    margin-top: 1.5vh;
 }
 
 .pure-img{
@@ -81,13 +81,13 @@ footer p, a{
 }
 
 #top_col_izq p{
-    font-size: 170%;
+    font-size: 4.5vh;
     margin-top: 10px;
 }
 
 #bottom_col_izq img{
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 2vh;
 }
 
 .inside {
@@ -98,4 +98,14 @@ footer p, a{
 
 .col_result{
     min-height: 50%;
+}
+
+.language_buttons{
+    margin-top: 3px;
+    height: 32px;
+}
+
+.language_buttons_active{
+    border: solid black;
+    border-width: 0px 0px 2px 0px;
 }

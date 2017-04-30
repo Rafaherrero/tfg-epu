@@ -1,0 +1,12 @@
+{
+    "title": "template_language",
+    "buttons":[
+        {"id": "button_level1", "value": ""},
+        {"id": "button_level2", "value": ""},
+        {"id": "button_level3", "value": ""}
+    ],
+    "text":[
+        {"id": "level_text", "value": ""},
+        {"id": "exercise_text", "value": ""}
+    ]
+}

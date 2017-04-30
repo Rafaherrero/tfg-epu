@@ -47,11 +47,11 @@
 <div class="pure-u-lg-15-24 offset-lg-1-24" id="blocklyArea">
      </div>
 
-<div class="pure-u-lg-22-24 offset-lg-1-24" id="level_selector">
+<div class="pure-u-lg-23-24 offset-lg-1-24" id="level_selector">
   <div class="pure-u-lg-3-24">
-  <p id="level_text">Levels: </p>
+  <p class="text_bottom_bar" id="level_text">Levels: </p>
   </div>
-  <div class="pure-u-lg-11-24">
+  <div class="pure-u-lg-10-24">
   <div class="pure-button-group" role="group">
     <button class="pure-button pure-button-active button-xlarge" id="button_level1">Level 1</button>
     <button class="pure-button button-xlarge" id="button_level2">Level 2</button>
@@ -59,14 +59,21 @@
 </div>
   </div>
   <div class="pure-u-lg-3-24">
-  <p id="level_text">Exercise: </p>
+  <p class="text_bottom_bar" id="exercise_text">Exercise: </p>
   </div>
-  <div class="pure-u-lg-5-24">
+  <div class="pure-u-lg-4-24">
     <select id="select_exercise">
-      <option value="nivel1_ejercicio1">Exercise 1: bananas</option>
-      <option value="nivel1_ejercicio2">Exercise 2: apples</option>
-      <option value="nivel1_ejercicio3">Exercise 3: pears</option>
+      <option value="level1_exercise1">Exercise 1: bananas</option>
+      <option value="level1_exercise2">Exercise 2: apples</option>
+      <option value="level1_exercise3">Exercise 3: pears</option>
       </select>
+    </div>
+    <div class="pure-u-lg-1-24" class="language_column"> 
+      <input type="image" class="language_buttons" id="spanish_language" src="img/spain.svg"/>
+      </div>
+      <div class="pure-u-lg-1-24" class="language_column">
+      <input type="image" class="language_buttons language_buttons_active" id="english_language" src="img/united-kingdom.svg"/>
+      </div>
     </div>
     </div>
   </div>
@@ -106,7 +113,9 @@
           startScale: 1.0,
           maxScale: 3,
           minScale: 0.3,
-          scaleSpeed: 1.2}});
+          scaleSpeed: 1.2},
+        media: 'img/blockly/',
+      trashcan: true});
   var onresize = function(e) {
     // Compute the absolute coordinates and dimensions of blocklyArea.
     var element = blocklyArea;
