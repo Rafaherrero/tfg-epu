@@ -5,8 +5,8 @@
         {"id": "button_level2", "value": "Nivel 2"},
         {"id": "button_level3", "value": "Nivel 3"}
     ],
-    "text":[
-        {"id": "level_text", "value": "Niveles"},
-        {"id": "exercise_text", "value": "Ejercicios"}
+    "texts":[
+        {"id": "level_text", "value": "Niveles: "},
+        {"id": "exercise_text", "value": "Ejercicios: "}
     ]
 }

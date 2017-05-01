@@ -1,0 +1,33 @@
+{
+    "spanish_language":[
+        {
+            "title": "Ejercicio 1: plátanos",
+            "description_game": [
+        {
+            "id": "1",
+            "text": "En este ejercicio trabajaremos con una única fruta, el plátano."
+        },
+        {
+            "id": "2",
+            "text": "Intentaremos introducir en la batidora 400kcal de plátanos. ¡Vamos allá!"
+        }
+    ]
+        }
+    ],
+    "english_language":[
+        {
+            "title": "Exercise 1: bananas",
+            "description_game": [
+        {
+            "id": "1",
+            "text": "In this exercise we will use only one fruit, the banana."
+        },
+        {
+            "id": "2",
+            "text": "We will try to put 400kcal of bananas in the mixer, let's go!"
+        }
+    ]
+        }
+    ],
+    "value": "level1_exercise1"
+}

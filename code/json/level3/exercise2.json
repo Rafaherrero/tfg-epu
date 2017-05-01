@@ -1,0 +1,25 @@
+{
+    "spanish_language":[
+        {
+            "title": "Ejercicio x: ",
+            "description_game": [
+        {
+            "id": "1",
+            "text": ""
+        }
+    ]
+        }
+    ],
+    "english_language":[
+        {
+            "title": "Exercise x: ",
+            "description_game": [
+        {
+            "id": "1",
+            "text": ""
+        }
+    ]
+        }
+    ],
+    "value": "levelx_exercisex"
+}

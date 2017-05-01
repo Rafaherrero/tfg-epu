@@ -33,6 +33,12 @@ footer {
 .button-xlarge {
     font-size: 125%;
     padding: 1.5vh 50px;
+    background: #c5c5c5;
+}
+
+.pure-button-active {
+    color: white;
+    background: #808080;
 }
 
 .text_bottom_bar {

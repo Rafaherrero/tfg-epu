@@ -1,0 +1,33 @@
+{
+    "spanish_language":[
+        {
+            "title": "Ejercicio 2: manzanas",
+            "description_game": [
+        {
+            "id": "1",
+            "text": ""
+        },
+        {
+            "id": "2",
+            "text": ""
+        }
+    ]
+        }
+    ],
+    "english_language":[
+        {
+            "title": "Exercise 2: apples",
+            "description_game": [
+        {
+            "id": "1",
+            "text": ""
+        },
+        {
+            "id": "2",
+            "text": ""
+        }
+    ]
+        }
+    ],
+    "value": "level1_exercise2"
+}

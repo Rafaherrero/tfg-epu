@@ -1,0 +1,15 @@
+{
+    "spanish_language":[
+        {
+            "title": "Nivel 1",
+            "description_level": "En este nivel aprenderemos conceptos básicos como las secuencias."
+        }
+    ],
+    "english_language":[
+        {
+            "title": "Level 1",
+            "description_level": "In this level we will learn basic concepts like sequences."
+        }
+    ],
+    "exercises": "3"
+}

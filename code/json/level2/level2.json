@@ -1,0 +1,15 @@
+{
+    "spanish_language":[
+        {
+            "title": "Nivel 2",
+            "description_level": ""
+        }
+    ],
+    "english_language":[
+        {
+            "title": "Level 2",
+            "description_level": ""
+        }
+    ],
+    "exercises": "4"
+}

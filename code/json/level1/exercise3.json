@@ -1,0 +1,33 @@
+{
+    "spanish_language":[
+        {
+            "title": "Ejercicio 3: pears",
+            "description_game": [
+        {
+            "id": "1",
+            "text": ""
+        },
+        {
+            "id": "2",
+            "text": ""
+        }
+    ]
+        }
+    ],
+    "english_language":[
+        {
+            "title": "Exercise 3: pears",
+            "description_game": [
+        {
+            "id": "1",
+            "text": ""
+        },
+        {
+            "id": "2",
+            "text": ""
+        }
+    ]
+        }
+    ],
+    "value": "level1_exercise3"
+}

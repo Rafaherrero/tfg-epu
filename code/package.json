@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "electron-dl": "^1.6.0",
-    "electron-json-storage": "^3.0.5"
+    "load-json-file": "^2.0.0"
   },
   "license": "GPL-3.0"
 }
