@@ -60,3 +60,17 @@ $("[id^=button_level]").click(function(event) {
 $(".language_buttons").click(function(event) {
     change_language(event.target.id)
 })
+
+$("#button_close_modal").click(function(){
+    close_modal();
+})
+
+function open_modal(){
+    $("#modal").css("top","0")
+    $("#button_close_modal").css("display","block")
+}
+
+function close_modal(){
+    $("#modal").css("top","-100vh")
+    $("#button_close_modal").css("display","none")
+}
