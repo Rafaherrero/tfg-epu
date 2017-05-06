@@ -53,6 +53,18 @@ function change_language(id_language){
     change_level(1)
 }
 
+function get_actual_level(){
+    return $('.level_button_active').attr('id')
+}
+
+function get_actual_exercise(){
+    console.log($( "#select_exercise" ).val())
+}
+
+function get_actual_language(){
+    return $('.language_buttons_active').attr('id')
+}
+
 //Buttons
 
 $("[id^=button_level]").click(function(event) {
@@ -68,7 +80,8 @@ $("#button_previous_level").click(function(){
 })
 
 $("#button_check_level").click(function(){
-    check_level();
+    //check_level();
+    get_actual_exercise();
 })
 
 $("#button_reset_level").click(function(){

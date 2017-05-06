@@ -66,22 +66,23 @@ footer {
 }
 
 #top_col_izq{
-    height: 10%;
+    height: 100px;
     text-align: center;
 }
 
 #medium_col_izq{
-    height: 62%;
+    height: calc(100% - 300px);
     background-image: url("../img/purty_wood.png");
+    display: flex;
 }
 
 #bottom_col_izq{
-    height: 20%;
+    height: 150px;
     display: flex;
 }
 
 #buttons_col_izq{
-    height: 9%;
+    height: 50px;
     text-align: center;
 }
 
@@ -107,8 +108,8 @@ footer p, a{
     margin: auto;
 }
 
-.col_result{
-    min-height: 50%;
+#plate{
+    height:100%;
 }
 
 .language_buttons{
@@ -122,7 +123,7 @@ footer p, a{
     border-radius: 10px;
 }
 
-    #modal {
+#modal {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     position: absolute;
@@ -134,7 +135,7 @@ footer p, a{
     transition: all .2s;
 }
 
-    #modal p {
+#modal p {
     width: 60%;
     height: 50%;
     position: absolute;
@@ -147,7 +148,7 @@ footer p, a{
     text-align: center;
 }
 
-    #button_close_modal{
+#button_close_modal{
     display: none;
     position: absolute;
     top: 1em;
