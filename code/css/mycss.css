@@ -86,15 +86,16 @@ footer {
     text-align: center;
 }
 
+#top_col_izq p{
+    font-size: 250%;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
 footer p, a{
     text-align: center;
     margin-top: 7px;
     color:white;
-}
-
-#top_col_izq p{
-    font-size: 4.5vh;
-    margin-top: 10px;
 }
 
 #bottom_col_izq img{
@@ -109,7 +110,8 @@ footer p, a{
 }
 
 #plate{
-    height:100%;
+    margin: auto;
+    width:90%;
 }
 
 .language_buttons{

@@ -8,7 +8,8 @@ const url = require('url')
 let mainWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 1024, height: 500, icon: 'img/donut.ico'})
+  mainWindow = new BrowserWindow({icon: 'img/donut.ico'})
+  mainWindow.maximize()
 
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),

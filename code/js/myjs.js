@@ -1,6 +1,7 @@
 const loadJsonFile = require('load-json-file');
 
 //$(window).resize(function(){location.reload();});
+//Tamaño minimo, 1245x750
 
 function get_json(path_to_json){
     return loadJsonFile.sync(path_to_json);
