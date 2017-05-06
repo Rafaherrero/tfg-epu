@@ -71,13 +71,18 @@ footer {
 }
 
 #medium_col_izq{
-    height: 70%;
+    height: 62%;
     background-image: url("../img/purty_wood.png");
 }
 
 #bottom_col_izq{
     height: 20%;
     display: flex;
+}
+
+#buttons_col_izq{
+    height: 9%;
+    text-align: center;
 }
 
 footer p, a{
@@ -98,7 +103,7 @@ footer p, a{
 
 .inside {
     font-size: 150%;
-    padding: 0.5em 0.5em;
+    padding: 1em 1em;
     margin: auto;
 }
 

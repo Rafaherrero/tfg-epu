@@ -53,12 +53,34 @@ function change_language(id_language){
     change_level(1)
 }
 
+//Buttons
+
 $("[id^=button_level]").click(function(event) {
     change_level(event.target.id.slice(-1))
 })
 
 $(".language_buttons").click(function(event) {
     change_language(event.target.id)
+})
+
+$("#button_previous_level").click(function(){
+    change_level();
+})
+
+$("#button_check_level").click(function(){
+    check_level();
+})
+
+$("#button_reset_level").click(function(){
+    reset_level();
+})
+
+$("#button_next_level").click(function(){
+    change_level();
+})
+
+$("#button_info_level").click(function(){
+    info_level();
 })
 
 $("#button_close_modal").click(function(){
