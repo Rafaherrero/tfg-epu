@@ -3,9 +3,65 @@ const loadJsonFile = require('load-json-file');
 //$(window).resize(function(){location.reload();});
 //Tamaño minimo, 1245x750
 
+var blocklyArea = document.getElementById('blocklyArea');
+  var blocklyDiv = document.getElementById('blocklyDiv');
+  var workspace = Blockly.inject(blocklyDiv,
+      {toolbox: document.getElementById('toolbox'),
+       zoom:
+         {controls: true,
+          wheel: false,
+          startScale: 1.0,
+          maxScale: 3,
+          minScale: 0.3,
+          scaleSpeed: 1.2},
+        media: 'img/blockly/',
+      trashcan: true});
+  var onresize = function(e) {
+    // Compute the absolute coordinates and dimensions of blocklyArea.
+    var element = blocklyArea;
+    var x = 0;
+    var y = 0;
+    do {
+      x += element.offsetLeft;
+      y += element.offsetTop;
+      element = element.offsetParent;
+    } while (element);
+    // Position blocklyDiv over blocklyArea.
+    blocklyDiv.style.left = x + 'px';
+    blocklyDiv.style.top = y + 'px';
+    blocklyDiv.style.width = blocklyArea.offsetWidth + 'px';
+    blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
+  };
+  window.addEventListener('resize', onresize, false);
+  onresize();
+  Blockly.svgResize(workspace);
+
 function get_json(path_to_json){
     return loadJsonFile.sync(path_to_json);
 }
+
+function initApi(interpreter, scope) {
+  // Add an API function for highlighting blocks.
+  var wrapper = function(id) {
+    id = id ? id.toString() : '';
+    return interpreter.createPrimitive(workspace.highlightBlock(id));
+  };
+  interpreter.setProperty(scope, 'highlightBlock',
+      interpreter.createNativeFunction(wrapper));
+}
+
+function myUpdateFunction(event) {
+    var code = Blockly.JavaScript.workspaceToCode(workspace);
+
+    var myInterpreter = new Interpreter(code, initApi);
+    myInterpreter.run();
+    console.log(code);
+}
+
+workspace.addChangeListener(myUpdateFunction);
+
+Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
+Blockly.JavaScript.addReservedWords('highlightBlock');
 
 function change_level(num_level){
 
@@ -29,9 +85,7 @@ function change_level(num_level){
             value: actual_exercise_json.value,
             text: actual_exercise_json[actual_language][0].title
         }));
-        
     }
-
 }
 
 function change_language(id_language){
@@ -101,12 +155,12 @@ $("#button_close_modal").click(function(){
     close_modal();
 })
 
-function open_modal(){
-    $("#modal").css("top","0")
-    $("#button_close_modal").css("display","block")
+function open_modal(id_modal){
+    $('#'+id_modal).css('top','0')
+    $('#button_close_modal').css('display','block')
 }
 
 function close_modal(){
-    $("#modal").css("top","-100vh")
-    $("#button_close_modal").css("display","none")
+    $('.modal').css('top','-100vh')
+    $('#button_close_modal').css('display','none')
 }

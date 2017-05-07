@@ -97,14 +97,24 @@
 
 <i class="fa fa-times-circle fa-3x" aria-hidden="true" id="button_close_modal"></i>
 
-<div id="modal">
-  <p> ¿Necesitas ayuda?</p>
+<div class="modal">
+
+</div>
+
+<div class="modal" id="license_modal">
+  <ul>
+  <li>Iconos realizados por <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+  <li>Patrón de fondo: <a href="https://www.toptal.com/designers/subtlepatterns/geometry-2/" title="Subtle Patterns">Subtle Patterns</a></li>
+  <li>Blockly: <a href="https://developers.google.com/blockly/" title="Blockly">Blockly</a></li>
+  <li>Intérprete Javascript: <a href="https://github.com/NeilFraser/JS-Interpreter" title="JS-Interpreter">JS-Interpreter</a></li>
+  <li>Comilona: <a href="https://github.com/Rafaherrero/tfg-epu" title="JS-Interpreter">Comilona en GitHub</a></li>
+  </ul>
 </div>
 
 </body>
 
 <footer>
-  <p>Rafael Herrero 2017 <a href=""> Licenses</a></p>
+  <p>Rafael Herrero 2017 <a href="#"onclick='open_modal("license_modal")'> Licenses</a></p>
 </footer>
 
 <xml id="toolbox" style="display: none">
@@ -116,51 +126,14 @@
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script>if (window.module) module = window.module;</script>
 
-<script src="js/myjs.js"></script>
+<script src="js/js_interpreter/acorn_interpreter.js"></script>
 
 <script src="js/blockly/blockly_compressed.js"></script>
 <script src="js/blockly/blocks_compressed.js"></script>
+<script src="js/blockly/javascript_compressed.js"></script>
 <script src="blocks/myblocks.js"></script>
 <script src="js/blockly/msg/js/es.js"></script>
 
-<script>
-  var blocklyArea = document.getElementById('blocklyArea');
-  var blocklyDiv = document.getElementById('blocklyDiv');
-  var workspace = Blockly.inject(blocklyDiv,
-      {toolbox: document.getElementById('toolbox'),
-       zoom:
-         {controls: true,
-          wheel: false,
-          startScale: 1.0,
-          maxScale: 3,
-          minScale: 0.3,
-          scaleSpeed: 1.2},
-        media: 'img/blockly/',
-      trashcan: true});
-  var onresize = function(e) {
-    // Compute the absolute coordinates and dimensions of blocklyArea.
-    var element = blocklyArea;
-    var x = 0;
-    var y = 0;
-    do {
-      x += element.offsetLeft;
-      y += element.offsetTop;
-      element = element.offsetParent;
-    } while (element);
-    // Position blocklyDiv over blocklyArea.
-    blocklyDiv.style.left = x + 'px';
-    blocklyDiv.style.top = y + 'px';
-    blocklyDiv.style.width = blocklyArea.offsetWidth + 'px';
-    blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
-  };
-  window.addEventListener('resize', onresize, false);
-  onresize();
-  Blockly.svgResize(workspace);
-</script>
-
-<!--footer Todo esto se debería poner en una zona no intrusiva
-<p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-<p><a href="https://www.toptal.com/designers/subtlepatterns/geometry-2/" title="Subtle Patterns"</a></p>
--->
+<script src="js/myjs.js"></script>
 
 </html>

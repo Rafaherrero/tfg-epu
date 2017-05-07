@@ -125,7 +125,7 @@ footer p, a{
     border-radius: 10px;
 }
 
-#modal {
+.modal {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     position: absolute;
@@ -134,11 +134,11 @@ footer p, a{
     height: 100vh;
     width: 100vw;
     z-index: 999;
-    transition: all .2s;
+    transition: all .5s;
 }
 
-#modal p {
-    width: 60%;
+.modal ul, .modal p{
+    width: 75%;
     height: 50%;
     position: absolute;
     top: 0;
@@ -146,8 +146,12 @@ footer p, a{
     bottom: 0;
     right: 0;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
+}
+
+.modal li{
+    margin-bottom: 10px;
 }
 
 #button_close_modal{
