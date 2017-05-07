@@ -1,0 +1,14 @@
+[{
+  "type": "plate",
+  "message0": "Poner en el plato %1",
+  "args0": [
+    {
+      "type": "input_statement",
+      "name": "put_in_plate",
+      "check": "String"
+    }
+  ],
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+}]

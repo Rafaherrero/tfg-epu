@@ -1,0 +1,73 @@
+[{
+  "type": "fruits",
+  "message0": "Frutas:  %1",
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "fruit_dropdown",
+      "options": [
+        [
+          "aguacate",
+          "avocado"
+        ],
+        [
+          "cereza",
+          "cherries"
+        ],
+        [
+          "coco",
+          "coconut"
+        ],
+        [
+          "frambuesa",
+          "raspberry"
+        ],
+        [
+          "fresa",
+          "strawberry"
+        ],
+        [
+          "limón",
+          "lemon-1"
+        ],
+        [
+          "manzana",
+          "apple-1"
+        ],
+        [
+          "melocotón",
+          "peach"
+        ],
+        [
+          "naranja",
+          "orange"
+        ],
+        [
+          "pera",
+          "pear"
+        ],
+        [
+          "piña",
+          "pineapple"
+        ],
+        [
+          "plátano",
+          "banana"
+        ],
+        [
+          "sandía",
+          "watermelon"
+        ],
+        [
+          "uvas",
+          "grapes"
+        ]
+      ]
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 0,
+  "tooltip": "",
+  "helpUrl": ""
+}]
