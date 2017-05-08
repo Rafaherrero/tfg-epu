@@ -1,7 +1,7 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio 2: manzanas",
+            "title": "Ejercicio 2: frutas",
             "description_game": [
         {
             "id": "1",
@@ -16,7 +16,7 @@
     ],
     "english_language":[
         {
-            "title": "Exercise 2: apples",
+            "title": "Exercise 2: fruits",
             "description_game": [
         {
             "id": "1",

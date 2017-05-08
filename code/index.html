@@ -17,19 +17,34 @@
 <div id="global_body">
 <div class="pure-u-lg-6-24 offset-lg-1-24" id="col_izq">
   <div class="pure-u-lg-24-24" id="top_col_izq">
-    <p>Goal: 300kcal</p>
+    <p>Goal: 5 fruits & vegetables</p>
   </div>
   <div class="pure-u-lg-24-24" id="medium_col_izq">
     <img src="img/restaurant.svg" id="plate">
   </div>
   
   <div class="pure-u-lg-24-24" id="bottom_col_izq">
-    <div class="pure-u-lg-6-24">
+    <div class="pure-u-lg-3-24 offset-lg-1-24">
     <img src="img/food/banana.svg">
     </div>
-    <div class="pure-u-lg-17-24 inside">
-    <p>= 90kcal</p>
+    <div class="pure-u-lg-3-24">
+    <img src="img/food/apple-1.svg">
     </div>
+    <div class="pure-u-lg-3-24">
+    <img src="img/food/avocado.svg">
+    </div>
+    <div class="pure-u-lg-3-24">
+    <img src="img/food/lemon-1.svg">
+    </div>
+    <div class="pure-u-lg-3-24">
+    <img src="img/food/orange.svg">
+    </div>
+    <div class="pure-u-lg-3-24">
+    <img src="img/food/cherries.svg">
+    </div>
+    <div class="pure-u-lg-3-24">
+    <img src="img/food/carrot.svg">
+    </div>    
     <!--<div class="pure-u-lg-6-24">
     <img src="img/food/apple-1.svg">
     </div>
@@ -118,8 +133,9 @@
 </footer>
 
 <xml id="toolbox" style="display: none">
-  <block type="mixer"></block>
+  <block type="plate"></block>
   <block type="fruits"></block>
+  <block type="vegetables"></block>
 </xml>
 
 <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
@@ -131,7 +147,9 @@
 <script src="js/blockly/blockly_compressed.js"></script>
 <script src="js/blockly/blocks_compressed.js"></script>
 <script src="js/blockly/javascript_compressed.js"></script>
-<script src="blocks/english_language/fruits.js"></script>
+<script src="blocks/english_language/plate_block.js"></script>
+<script src="blocks/english_language/fruits_blocks.js"></script>
+<script src="blocks/english_language/vegetables_blocks.js"></script>
 <script src="js/blockly/msg/js/es.js"></script>
 
 <script src="js/myjs.js"></script>

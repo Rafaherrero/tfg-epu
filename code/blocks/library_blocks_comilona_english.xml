@@ -1,0 +1,179 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="k?DntU/A6Z:2w%l+umx," deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">plate</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_statement" id="k38rA!~-[`qE${qg@.1b">
+        <field name="INPUTNAME">put_in_plate</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="H$oD=BjY6:!*`Gsehc0G">
+            <field name="TEXT">Poner en el plato</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="@Xiw/Xm;fhjqw%{-rC9g"></shadow>
+          <block type="type_string" id="VcaXcmX[tUH/`.#s44d0"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="x:UyitLhnLM$Phx7CjDg" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="_(s6)#PiTy_nBo^14kRA" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="5#puV3e%SYn0Y{p!$vK!">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="(2][`JI]?]Ak~=]|v*{1" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">fruits</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="y)F$]MX).YpcoLD/f%}k">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="7lnWZ|~7:uSxS7cXx~L~">
+            <field name="TEXT">Fruits: </field>
+            <next>
+              <block type="field_dropdown" id="r|m`XR*1pnTpCcH.wVew">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">fruit_dropdown</field>
+                <field name="USER0">apple</field>
+                <field name="CPU0">apple-1</field>
+                <field name="USER1">avocado</field>
+                <field name="CPU1">avocado</field>
+                <field name="USER2">banana</field>
+                <field name="CPU2">banana</field>
+                <field name="USER3">cherry</field>
+                <field name="CPU3">cherries</field>
+                <field name="USER4">coconut</field>
+                <field name="CPU4">coconut</field>
+                <field name="USER5">grapes</field>
+                <field name="CPU5">grapes</field>
+                <field name="USER6">lemon</field>
+                <field name="CPU6">lemon-1</field>
+                <field name="USER7">orange</field>
+                <field name="CPU7">orange</field>
+                <field name="USER8">peach</field>
+                <field name="CPU8">peach</field>
+                <field name="USER9">pear</field>
+                <field name="CPU9">pear</field>
+                <field name="USER10">pineapple</field>
+                <field name="CPU10">pineapple</field>
+                <field name="USER11">raspberry</field>
+                <field name="CPU11">raspberry</field>
+                <field name="USER12">strawberry</field>
+                <field name="CPU12">strawberry</field>
+                <field name="USER13">watermelon</field>
+                <field name="CPU13">watermelon</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="KI,rs%71E!P%T5l(U5[b" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="Omrou`#xy@ht7kHqdd$Z" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="B+M{Cx,?V~h[EuAU4fjI"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="uWw(eRJN3{%;(`:.kcw1"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="t)Q7IP~eG1aXPksw.5Lt">
+        <mutation colour="#a55b5b"></mutation>
+        <field name="HUE">0</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="6ZPrS(dU72}yzg({?I]g" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">vegetables</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="=OK}$|Y~_eIu.Ev(lfhh">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id=")5V#Wu,Z7/d)]yuz]%1p">
+            <field name="TEXT">Vegetables: </field>
+            <next>
+              <block type="field_dropdown" id="=Fq}0zNhceqAyzBM5Cxm">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">vegetables_dropdown</field>
+                <field name="USER0">asparagus</field>
+                <field name="CPU0">asparagus</field>
+                <field name="USER1">broccoli</field>
+                <field name="CPU1">broccoli</field>
+                <field name="USER2">cabbage</field>
+                <field name="CPU2">cabbage</field>
+                <field name="USER3">carrot</field>
+                <field name="CPU3">carrot</field>
+                <field name="USER4">cauliflower</field>
+                <field name="CPU4">cauliflower</field>
+                <field name="USER5">cucumber</field>
+                <field name="CPU5">cucumber</field>
+                <field name="USER6">garlic</field>
+                <field name="CPU6">garlic</field>
+                <field name="USER7">lettuce</field>
+                <field name="CPU7">salad-1</field>
+                <field name="USER8">onion</field>
+                <field name="CPU8">onion-1</field>
+                <field name="USER9">peas</field>
+                <field name="CPU9">peas</field>
+                <field name="USER10">pepper</field>
+                <field name="CPU10">pepper</field>
+                <field name="USER11">potato</field>
+                <field name="CPU11">potatoes-2</field>
+                <field name="USER12">radish</field>
+                <field name="CPU12">radish</field>
+                <field name="USER13">tomato</field>
+                <field name="CPU13">tomato</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="Ue[$wqX;7y(pLd4_AG*{" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="u,dNd$|Soi-G^Bz._I=Y" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="}~vE^YheH?f?0+?$;V?U"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="NY}+~:=LW[f1DaMJ6z`5"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="n]sVajvrI}HBMWzOL7aA">
+        <mutation colour="#80a55b"></mutation>
+        <field name="HUE">90</field>
+      </block>
+    </value>
+  </block></xml>

@@ -71,13 +71,13 @@ footer {
 }
 
 #medium_col_izq{
-    height: calc(100% - 300px);
+    height: calc(100% - 250px);
     background-image: url("../img/purty_wood.png");
     display: flex;
 }
 
 #bottom_col_izq{
-    height: 150px;
+    height: 100px;
     display: flex;
 }
 
@@ -87,8 +87,8 @@ footer {
 }
 
 #top_col_izq p{
-    font-size: 250%;
-    margin-top: 26px;
+    font-size: 200%;
+    margin-top: 35px;
     margin-bottom: 26px;
 }
 
