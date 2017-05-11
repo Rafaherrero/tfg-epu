@@ -40,6 +40,10 @@ function get_json(path_to_json){
     return loadJsonFile.sync(path_to_json);
 }
 
+function highlightBlock(id) {
+  workspace.highlightBlock(id);
+}
+
 function initApi(interpreter, scope) {
   // Add an API function for highlighting blocks.
   var wrapper = function(id) {
@@ -48,17 +52,32 @@ function initApi(interpreter, scope) {
   };
   interpreter.setProperty(scope, 'highlightBlock',
       interpreter.createNativeFunction(wrapper));
+
+      // Add an API function for the prompt() block.
+  wrapper = function(text) {
+    text = text ? text.toString() : '';
+    return interpreter.createPrimitive(put_in_dish(text));
+  };
+  interpreter.setProperty(scope, 'put_in_dish',
+      interpreter.createNativeFunction(wrapper));
 }
+
+function put_in_dish(fruta){
+    console.log("Pongo una "+fruta+" en el plato")
+}
+
 
 function myUpdateFunction(event) {
     var code = Blockly.JavaScript.workspaceToCode(workspace);
 
     var myInterpreter = new Interpreter(code, initApi);
-    myInterpreter.run();
-    console.log(code);
+    function nextStep() {
+        if (myInterpreter.step()) {
+            window.setTimeout(nextStep, 10);
+        }
+    }
+    nextStep();
 }
-
-workspace.addChangeListener(myUpdateFunction);
 
 Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
 Blockly.JavaScript.addReservedWords('highlightBlock');
@@ -113,11 +132,15 @@ function get_actual_level(){
 }
 
 function get_actual_exercise(){
-    console.log($( "#select_exercise" ).val())
+    return $('#select_exercise').val()
 }
 
 function get_actual_language(){
     return $('.language_buttons_active').attr('id')
+}
+
+function check_level(){
+    var code = Blockly.JavaScript.workspaceToCode(workspace);
 }
 
 //Buttons
@@ -135,8 +158,7 @@ $("#button_previous_level").click(function(){
 })
 
 $("#button_check_level").click(function(){
-    //check_level();
-    get_actual_exercise();
+    check_level();
 })
 
 $("#button_reset_level").click(function(){
@@ -144,7 +166,8 @@ $("#button_reset_level").click(function(){
 })
 
 $("#button_next_level").click(function(){
-    change_level();
+    //change_level();
+    myUpdateFunction();
 })
 
 $("#button_info_level").click(function(){
