@@ -112,6 +112,7 @@ footer p, a{
 #plate{
     margin: auto;
     width:90%;
+    position: relative;
 }
 
 .language_buttons{
@@ -162,4 +163,10 @@ footer p, a{
     z-index: 1000;
     color: #fff;
     transition: all .5s;
+}
+
+.food_in_dish{
+    position: absolute;
+    margin: auto;
+    width: 7%;
 }

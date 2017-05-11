@@ -73,7 +73,7 @@ function myUpdateFunction(event) {
     var myInterpreter = new Interpreter(code, initApi);
     function nextStep() {
         if (myInterpreter.step()) {
-            window.setTimeout(nextStep, 10);
+            window.setTimeout(nextStep, 100);
         }
     }
     nextStep();
