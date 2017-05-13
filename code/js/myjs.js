@@ -53,7 +53,7 @@ function initApi(interpreter, scope) {
   interpreter.setProperty(scope, 'highlightBlock',
       interpreter.createNativeFunction(wrapper));
 
-      // Add an API function for the prompt() block.
+      // Add an API function for put_in_dish().
   wrapper = function(text) {
     text = text ? text.toString() : '';
     return interpreter.createPrimitive(put_in_dish(text));
@@ -64,6 +64,7 @@ function initApi(interpreter, scope) {
 
 function put_in_dish(fruta){
     console.log("Pongo una "+fruta+" en el plato")
+    $(".food_in_dish").attr("src","img/food/"+fruta+".svg");
 }
 
 

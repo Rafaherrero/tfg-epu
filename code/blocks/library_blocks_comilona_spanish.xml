@@ -35,10 +35,10 @@
       </block>
     </value>
   </block><block type="factory_base" id="(2][`JI]?]Ak~=]|v*{1" deletable="false" movable="false" x="0" y="0">
-    <mutation connections="BOTH"></mutation>
+    <mutation connections="LEFT"></mutation>
     <field name="NAME">fruits</field>
     <field name="INLINE">AUTO</field>
-    <field name="CONNECTIONS">BOTH</field>
+    <field name="CONNECTIONS">LEFT</field>
     <statement name="INPUTS">
       <block type="input_dummy" id="y)F$]MX).YpcoLD/f%}k">
         <field name="ALIGN">LEFT</field>
@@ -93,11 +93,9 @@
         <field name="TEXT"></field>
       </block>
     </value>
-    <value name="TOPTYPE">
-      <shadow type="type_null" id="B+M{Cx,?V~h[EuAU4fjI"></shadow>
-    </value>
-    <value name="BOTTOMTYPE">
-      <shadow type="type_null" id="uWw(eRJN3{%;(`:.kcw1"></shadow>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="4{r5;Zm$19K*n8T]V:*g"></shadow>
+      <block type="type_string" id="qLmf7k%EBQg*/XW@|F+p"></block>
     </value>
     <value name="COLOUR">
       <block type="colour_hue" id="t)Q7IP~eG1aXPksw.5Lt">
@@ -106,10 +104,10 @@
       </block>
     </value>
   </block><block type="factory_base" id="6ZPrS(dU72}yzg({?I]g" deletable="false" movable="false" x="0" y="0">
-    <mutation connections="BOTH"></mutation>
+    <mutation connections="LEFT"></mutation>
     <field name="NAME">vegetables</field>
     <field name="INLINE">AUTO</field>
-    <field name="CONNECTIONS">BOTH</field>
+    <field name="CONNECTIONS">LEFT</field>
     <statement name="INPUTS">
       <block type="input_dummy" id="=OK}$|Y~_eIu.Ev(lfhh">
         <field name="ALIGN">LEFT</field>
@@ -164,16 +162,56 @@
         <field name="TEXT"></field>
       </block>
     </value>
-    <value name="TOPTYPE">
-      <shadow type="type_null" id="}~vE^YheH?f?0+?$;V?U"></shadow>
-    </value>
-    <value name="BOTTOMTYPE">
-      <shadow type="type_null" id="NY}+~:=LW[f1DaMJ6z`5"></shadow>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="(t`On|n@t9fuSQwOhW;L"></shadow>
+      <block type="type_string" id=";0sF!2rz?IQmr7mb{z|K"></block>
     </value>
     <value name="COLOUR">
       <block type="colour_hue" id="n]sVajvrI}HBMWzOL7aA">
         <mutation colour="#80a55b"></mutation>
         <field name="HUE">90</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id=".?R)BRO+%Th[v%$Pe}:u" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">dish</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="._PLK,+3o+i!N6Ig4o{s">
+        <field name="INPUTNAME">put_in_dish</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="SeQ[-9LE9lJU|v$p1~}b">
+            <field name="TEXT">Poner en el plato:</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="ov8CXFKCCYT{v=kQNEX^"></shadow>
+          <block type="type_string" id="{x$*))4EhTyNx#_R#bsS"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="#12]/`/AKuAVHjnpp},y" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="rkc`y7yA/w:(|Sc4!==t" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="5f$D)AqTjx+@}W3~?cqh"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="59BRILc/JW$|VEIdy(S5"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="=(%WJ/rOsOahA6kUnJB]">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
       </block>
     </value>
   </block></xml>

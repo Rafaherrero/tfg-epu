@@ -3,8 +3,7 @@ Blockly.Blocks['vegetables'] = {
     this.appendDummyInput()
         .appendField("Verduras y hortalizas:")
         .appendField(new Blockly.FieldDropdown([["ajo","garlic"], ["brócoli","broccoli"], ["cebolla","onion-1"], ["col","cabbage"], ["coliflor","cauliflower"], ["espárragos","asparagus"], ["guisante","peas"], ["lechuga","salad-1"], ["papa","potatoes-2"], ["pepino","cucumber"], ["pimiento","pepper"], ["rábano","radish"], ["tomate","tomato"], ["zanahoria","carrot"]]), "vegetables_dropdown");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
+    this.setOutput(true, "String");
     this.setColour(90);
     this.setTooltip('');
     this.setHelpUrl('');
@@ -14,6 +13,7 @@ Blockly.Blocks['vegetables'] = {
 Blockly.JavaScript['vegetables'] = function(block) {
   var dropdown_vegetables_dropdown = block.getFieldValue('vegetables_dropdown');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
-  return code;
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
 };
