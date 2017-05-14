@@ -1,7 +1,12 @@
 const loadJsonFile = require('load-json-file');
 
 //$(window).resize(function(){location.reload();});
-//Tamaño minimo, 1245x750
+//Tamaño minimo, 1250x750
+
+window.onload = function () {
+    change_language("english_language")
+    change_level(1)
+}
 
 var blocklyArea = document.getElementById('blocklyArea');
   var blocklyDiv = document.getElementById('blocklyDiv');
@@ -63,10 +68,8 @@ function initApi(interpreter, scope) {
 }
 
 function put_in_dish(fruta){
-    console.log("Pongo una "+fruta+" en el plato")
-    $(".food_in_dish").attr("src","img/food/"+fruta+".svg");
+    $('#medium_col_izq').append('<img id="food_'+$('.food_in_dish').length+'" src="img/food/'+fruta+'.svg" class="food_in_dish" />')
 }
-
 
 function myUpdateFunction(event) {
     var code = Blockly.JavaScript.workspaceToCode(workspace);
@@ -89,7 +92,7 @@ function change_level(num_level){
     $('[id^=button_level]').attr('class', 'pure-button button-xlarge');
 
     //Selected button as active
-    $('#button_level'+num_level).attr('class', 'pure-button button-xlarge pure-button-active');
+    $('#button_level'+num_level).attr('class', 'pure-button button-xlarge pure-button-active level_button_active');
 
     //Delete all select options
     $('#select_exercise').empty();
@@ -128,12 +131,20 @@ function change_language(id_language){
     change_level(1)
 }
 
+function change_exercise(id_level, id_exercise){
+    
+    if (id_level>3)
+        id_level=1
+
+    change_level(id_level)
+}
+
 function get_actual_level(){
-    return $('.level_button_active').attr('id')
+    return $('.level_button_active').attr('id').slice(-1)
 }
 
 function get_actual_exercise(){
-    return $('#select_exercise').val()
+    return $('#select_exercise').val().slice(-1)
 }
 
 function get_actual_language(){
@@ -144,8 +155,7 @@ function check_level(){
     var code = Blockly.JavaScript.workspaceToCode(workspace);
 }
 
-//Buttons
-
+//Buttons and select
 $("[id^=button_level]").click(function(event) {
     change_level(event.target.id.slice(-1))
 })
@@ -154,21 +164,25 @@ $(".language_buttons").click(function(event) {
     change_language(event.target.id)
 })
 
+$('#select_exercise').on('change', function() {
+    change_exercise(get_actual_level(),this.value.slice(-1))
+})
+
 $("#button_previous_level").click(function(){
-    change_level();
+    change_exercise();
 })
 
 $("#button_check_level").click(function(){
-    check_level();
+    myUpdateFunction();
 })
 
 $("#button_reset_level").click(function(){
-    reset_level();
+    change_exercise(get_actual_level(),get_actual_exercise())
 })
 
 $("#button_next_level").click(function(){
-    //change_level();
-    myUpdateFunction();
+    change_exercise();
+    
 })
 
 $("#button_info_level").click(function(){
