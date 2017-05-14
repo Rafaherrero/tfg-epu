@@ -71,18 +71,6 @@ function put_in_dish(fruta){
     $('#medium_col_izq').append('<img id="food_'+$('.food_in_dish').length+'" src="img/food/'+fruta+'.svg" class="food_in_dish" />')
 }
 
-function myUpdateFunction(event) {
-    var code = Blockly.JavaScript.workspaceToCode(workspace);
-
-    var myInterpreter = new Interpreter(code, initApi);
-    function nextStep() {
-        if (myInterpreter.step()) {
-            window.setTimeout(nextStep, 100);
-        }
-    }
-    nextStep();
-}
-
 Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
 Blockly.JavaScript.addReservedWords('highlightBlock');
 
@@ -153,6 +141,15 @@ function get_actual_language(){
 
 function check_level(){
     var code = Blockly.JavaScript.workspaceToCode(workspace);
+    $('.food_in_dish').remove()
+
+    var myInterpreter = new Interpreter(code, initApi);
+    function nextStep() {
+        if (myInterpreter.step()) {
+            window.setTimeout(nextStep, 100);
+        }
+    }
+    nextStep();
 }
 
 //Buttons and select
@@ -173,7 +170,7 @@ $("#button_previous_level").click(function(){
 })
 
 $("#button_check_level").click(function(){
-    myUpdateFunction();
+    check_level();
 })
 
 $("#button_reset_level").click(function(){
