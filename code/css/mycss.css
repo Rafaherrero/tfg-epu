@@ -73,7 +73,8 @@ footer {
 #medium_col_izq{
     height: calc(100% - 250px);
     background-image: url("../img/purty_wood.png");
-    display: flex;
+    text-align: center;
+    position: relative;
 }
 
 #bottom_col_izq{
@@ -87,7 +88,7 @@ footer {
 }
 
 #goal_text{
-    font-size: 150%;
+    font-size: 2vw;
     margin-top: 35px;
     margin-bottom: 26px;
 }
@@ -107,12 +108,6 @@ footer p, a{
     font-size: 150%;
     padding: 1em 1em;
     margin: auto;
-}
-
-#plate{
-    margin: auto;
-    width:90%;
-    position: relative;
 }
 
 .language_buttons{
@@ -165,8 +160,24 @@ footer p, a{
     transition: all .5s;
 }
 
-.food_in_dish{
-    position: absolute;
+#plate{
+position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
     margin: auto;
-    width: 7%;
 }
+
+.food_in_dish{
+position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    margin: auto;
+}     
