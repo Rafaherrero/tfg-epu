@@ -180,4 +180,6 @@ position: absolute;
     width: 60%;
     height: 60%;
     margin: auto;
+    transform: rotate(30deg);
+    transform-origin: bottom;
 }
