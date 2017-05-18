@@ -69,6 +69,7 @@ function initApi(interpreter, scope) {
 
 function put_in_dish(fruta){
     $('#medium_col_izq').append('<img id="food_'+$('.food_in_dish').length+'" src="img/food/'+fruta+'.svg" class="food_in_dish" />')
+    $('#food_'+($('.food_in_dish').length-1)).css({'transform' : 'rotate('+(($('.food_in_dish').length)-1)*60+'deg)'})
 }
 
 Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
