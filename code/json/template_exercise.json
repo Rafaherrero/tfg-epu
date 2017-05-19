@@ -2,23 +2,15 @@
     "spanish_language":[
         {
             "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "description_game": "",
+            "goal": ""
         }
     ],
     "english_language":[
         {
             "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+           "description_game": "",
+            "goal": ""
         }
     ],
     "value": "levelx_exercisex"

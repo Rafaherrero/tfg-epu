@@ -6,6 +6,7 @@ const loadJsonFile = require('load-json-file');
 window.onload = function () {
     change_language("english_language")
     change_level(1)
+    change_exercise(1,1)
 }
 
 var blocklyArea = document.getElementById('blocklyArea');
@@ -88,14 +89,13 @@ function change_level(num_level){
 
     //Load all new options onto the select
     var json_select_options = get_json('json/level'+num_level+'/level'+num_level+'.json');
-    var actual_language = $(".language_buttons_active").prop('id');
 
     for(i=1; i<=json_select_options.exercises;i++){
         var actual_exercise_json = get_json('json/level'+num_level+'/exercise'+i+'.json');
 
         $('#select_exercise').append($('<option>', {
             value: actual_exercise_json.value,
-            text: actual_exercise_json[actual_language][0].title
+            text: actual_exercise_json[get_actual_language()][0].title
         }));
     }
 }
@@ -117,15 +117,19 @@ function change_language(id_language){
         $('#'+item.id).html(item.value);
     });
 
-    change_level(1)
+    change_exercise(1,1)
 }
 
 function change_exercise(id_level, id_exercise){
-    
     if (id_level>3)
         id_level=1
 
-    change_level(id_level)
+    if(id_level!=get_actual_level())
+        change_level(id_level)
+
+    var json_level = get_json('json/level'+id_level+'/exercise'+id_exercise+'.json');
+    $('#goal_text').html(json_level[get_actual_language()][0].goal)
+    $('#info_modal_text').html(json_level[get_actual_language()][0].description_game)
 }
 
 function get_actual_level(){
@@ -153,9 +157,13 @@ function check_level(){
     nextStep();
 }
 
+function info_level(){
+    open_modal("info_modal")
+}
+
 //Buttons and select
 $("[id^=button_level]").click(function(event) {
-    change_level(event.target.id.slice(-1))
+    change_exercise(event.target.id.slice(-1),1)
 })
 
 $(".language_buttons").click(function(event) {
@@ -180,7 +188,6 @@ $("#button_reset_level").click(function(){
 
 $("#button_next_level").click(function(){
     change_exercise();
-    
 })
 
 $("#button_info_level").click(function(){
