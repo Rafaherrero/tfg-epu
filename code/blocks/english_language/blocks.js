@@ -72,7 +72,6 @@ Blockly.Blocks['english_language_banana_dish'] = {
 };
 
 Blockly.JavaScript['english_language_banana_dish'] = function(block) {
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = 'put_in_dish("banana");';
   return code;
 };

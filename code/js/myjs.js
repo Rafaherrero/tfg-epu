@@ -171,6 +171,8 @@ function check_level(){
     var code = Blockly.JavaScript.workspaceToCode(workspace);
     $('.food_in_dish').remove()
 
+    console.log(code)
+
     var myInterpreter = new Interpreter(code, initApi);
     function nextStep() {
         if (myInterpreter.step()) {
