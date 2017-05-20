@@ -2,31 +2,15 @@
     "spanish_language":[
         {
             "title": "Ejercicio 2: frutas",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        },
-        {
-            "id": "2",
-            "text": ""
-        }
-    ]
+            "description_game": "En este ejercicio seguiremos la misma idea que en el caso anterior, salvo que ahora intentaremos colocar 5 frutas distintas. ¡Vamos allá!",
+            "goal": "Meta: 5 frutas distintas"
         }
     ],
     "english_language":[
         {
             "title": "Exercise 2: fruits",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        },
-        {
-            "id": "2",
-            "text": ""
-        }
-    ]
+            "description_game": "In this exercise we will continue wih the same idea as in the previous case, but now we will try to put 5 different fruits. Let's go!",
+            "goal": "Goal: 5 different fruits"
         }
     ],
     "value": "exercise2"

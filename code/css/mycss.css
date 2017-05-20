@@ -1,6 +1,6 @@
 html{
     position: relative;
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -19,6 +19,7 @@ footer {
 
 #blocklyArea {
     min-height: calc(100vh - 160px);
+    max-height: calc(100vh - 160px);
 }
 
 #level_selector {
@@ -71,16 +72,16 @@ footer {
 }
 
 #medium_col_izq{
-    height: calc(100% - 150px);
+    height: calc(100% - 250px);
     background-image: url("../img/purty_wood.png");
     text-align: center;
     position: relative;
 }
 
-/*#bottom_col_izq{
-    height: 100px;
+#bottom_col_izq{
+    height: 95px;
     display: flex;
-}*/
+}
 
 #buttons_col_izq{
     height: 50px;

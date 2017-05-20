@@ -7,7 +7,12 @@ window.onload = function () {
     change_language("english_language")
     change_level(1)
     change_exercise(1,1)
+    //$("script[src='en.js']").remove()
 }
+
+$.ajaxPrefilter(function( options, original_Options, jqXHR ) {
+    options.async = true;
+});
 
 var blocklyArea = document.getElementById('blocklyArea');
   var blocklyDiv = document.getElementById('blocklyDiv');
@@ -102,6 +107,7 @@ function change_level(num_level){
 
 function change_language(id_language){
     var json_language = get_json('json/languages/'+id_language+'.json');
+    var blockly_language = 'en';
 
     $('.language_buttons').attr('class', 'language_buttons');
 
@@ -130,6 +136,10 @@ function change_exercise(id_level, id_exercise){
     var json_level = get_json('json/level'+id_level+'/exercise'+id_exercise+'.json');
     $('#goal_text').html(json_level[get_actual_language()][0].goal)
     $('#info_modal_text').html(json_level[get_actual_language()][0].description_game)
+}
+
+function change_blockly_language(blockly_language){
+    $('<script>').attr({src: 'js/blockly/msg/js/'+blockly_language+'.js',type: 'text/javascript',id: 'blockly_languague_script'}).appendTo('body')
 }
 
 function get_actual_level(){
@@ -168,6 +178,11 @@ $("[id^=button_level]").click(function(event) {
 
 $(".language_buttons").click(function(event) {
     change_language(event.target.id)
+
+    if(event.target.id=='english_language')
+        change_blockly_language('en');
+    else if (event.target.id=='spanish_language')
+        change_blockly_language('es');
 })
 
 $('#select_exercise').on('change', function() {
