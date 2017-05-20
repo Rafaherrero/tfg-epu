@@ -134,15 +134,15 @@ footer p, a{
 }
 
 #info_modal p{
-    width: 50%;
-    height: 40%;
+    width: 60%;
+    height: 50%;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     background-color: white;
     border-radius: 10px;
@@ -153,6 +153,13 @@ footer p, a{
     flex-direction:column;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+#info_modal video{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%; 
 }
 
 #info_modal{

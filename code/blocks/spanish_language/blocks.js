@@ -1,4 +1,4 @@
-Blockly.Blocks['dish'] = {
+Blockly.Blocks['spanish_language_dish'] = {
   init: function() {
     this.appendValueInput("put_in_dish")
         .setCheck("String")
@@ -11,7 +11,7 @@ Blockly.Blocks['dish'] = {
   }
 };
 
-Blockly.JavaScript['dish'] = function(block) {
+Blockly.JavaScript['spanish_language_dish'] = function(block) {
   var value_put_in_dish = Blockly.JavaScript.valueToCode(block, 'put_in_dish', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
   var code = '...;\n';
@@ -20,7 +20,7 @@ Blockly.JavaScript['dish'] = function(block) {
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-Blockly.Blocks['fruits'] = {
+Blockly.Blocks['spanish_language_fruits'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Frutas: ")
@@ -32,7 +32,7 @@ Blockly.Blocks['fruits'] = {
   }
 };
 
-Blockly.JavaScript['fruits'] = function(block) {
+Blockly.JavaScript['spanish_language_fruits'] = function(block) {
   var dropdown_fruit_dropdown = block.getFieldValue('fruit_dropdown');
   // TODO: Assemble JavaScript into code variable.
   var code = '...';
@@ -42,7 +42,7 @@ Blockly.JavaScript['fruits'] = function(block) {
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-Blockly.Blocks['vegetables'] = {
+Blockly.Blocks['spanish_language_vegetables'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Verduras y hortalizas:")
@@ -54,7 +54,7 @@ Blockly.Blocks['vegetables'] = {
   }
 };
 
-Blockly.JavaScript['vegetables'] = function(block) {
+Blockly.JavaScript['spanish_language_vegetables'] = function(block) {
   var dropdown_vegetables_dropdown = block.getFieldValue('vegetables_dropdown');
   // TODO: Assemble JavaScript into code variable.
   var code = '...';
@@ -64,7 +64,7 @@ Blockly.JavaScript['vegetables'] = function(block) {
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-Blockly.Blocks['banana_dish'] = {
+Blockly.Blocks['spanish_language_banana_dish'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Poner un plátano en el plato");
@@ -76,7 +76,7 @@ Blockly.Blocks['banana_dish'] = {
   }
 };
 
-Blockly.JavaScript['banana_dish'] = function(block) {
+Blockly.JavaScript['spanish_language_banana_dish'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = '...;\n';
   return code;

@@ -13,6 +13,6 @@
             "goal": "Goal: 5 different fruits"
         }
     ],
-    "blocks": ["banana_dish"],
+    "blocks": ["fruits"],
     "value": "exercise2"
 }

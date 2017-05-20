@@ -121,9 +121,6 @@ function change_language(id_language){
         $('#'+item.id).html(item.value);
     });
 
-    $('#blocks_script').remove()
-    $('<script>').attr({src: 'blocks/'+id_language+'/blocks.js', id: 'blocks_script'}).appendTo('body')
-
     change_level(1)
     change_exercise(1,1) 
 }
@@ -137,7 +134,9 @@ function change_exercise(id_level, id_exercise){
 
     var json_level = get_json('json/level'+id_level+'/exercise'+id_exercise+'.json');
     $('#goal_text').html(json_level[get_actual_language()][0].goal)
-    $('#info_modal_text').html(json_level[get_actual_language()][0].description_game)
+    $('#info_modal_text').html(json_level[get_actual_language()][0].description_game+'<video autoplay loop><source src="video/level1/exercise1.mp4" type="video/mp4" /> </video>')
+
+    open_modal('info_modal')
 }
 
 function change_blockly_language(blockly_language){
@@ -162,7 +161,7 @@ function get_blocks(){
     var block_xml = '<xml id="toolbox" style="display: none">'
 
     $.each(json_blocks.blocks, function(i, item) {
-        block_xml = block_xml+'<block type="'+item+'"></block>'
+        block_xml = block_xml+'<block type="'+get_actual_language()+'_'+item+'"></block>'
     });
     
     return block_xml+'</xml>'
@@ -181,10 +180,6 @@ function check_level(){
     nextStep();
 }
 
-function info_level(){
-    open_modal("info_modal")
-}
-
 //Buttons and select
 $("[id^=button_level]").click(function(event) {
     change_exercise(event.target.id.slice(-1),1)
@@ -198,7 +193,7 @@ $(".language_buttons").click(async function(event) {
     else if (event.target.id=='spanish_language')
         change_blockly_language('es');
     
-    await workspace.updateToolbox(get_blocks()); 
+    workspace.updateToolbox(get_blocks()); 
 })
 
 $('#select_exercise').on('change', function() {
@@ -227,7 +222,7 @@ $("#button_next_level").click(function(){
 })
 
 $("#button_info_level").click(function(){
-    info_level();
+    open_modal('info_modal')
 })
 
 $("#button_close_modal").click(function(){
