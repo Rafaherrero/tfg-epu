@@ -13,5 +13,6 @@
             "goal": "Goal: 5 fruits & vegetables"
         }
     ],
+    "blocks": ["banana_dish"],
     "value": "exercise3"
 }

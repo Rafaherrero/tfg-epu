@@ -61,3 +61,23 @@ Blockly.JavaScript['vegetables'] = function(block) {
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Blockly.Blocks['banana_dish'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Poner un plátano en el plato");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.JavaScript['banana_dish'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};

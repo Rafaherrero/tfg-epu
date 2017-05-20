@@ -9,7 +9,7 @@
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id="H$oD=BjY6:!*`Gsehc0G">
-            <field name="TEXT">Poner en el plato</field>
+            <field name="TEXT">Put in dish</field>
           </block>
         </statement>
         <value name="TYPE">
@@ -174,6 +174,85 @@
       <block type="colour_hue" id="n]sVajvrI}HBMWzOL7aA">
         <mutation colour="#80a55b"></mutation>
         <field name="HUE">90</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="Z/Kv/{W-o3[4rLsR9++/" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">dish</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="-@n@)^0p34wKYU96Mhz=">
+        <field name="INPUTNAME">put_in_dish</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="AYA#Ex]H;X7TD8Q%HYEv">
+            <field name="TEXT">Put in dish:</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="DL=yqotT`JE+Do-iT:m8"></shadow>
+          <block type="type_string" id="LDw$Qkp0,+}+H6!zC?C-"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="*r{AbL7qW9AfTN|~l06d" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="dM*==9KDfR.t)|I`kwV)" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="sQLAeR%7^d+G;}h,d*1d"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="Z^)AM}J}5%3=Cc1E3jlJ"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="ou;Mh1/raOgO7q{kgLnZ">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="Cl2OaOu-V?mx#-u0DZ4#" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">banana_dish</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="fU}s:fB0JlO#N@7k;grB">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="t%)Te#t0D36*Z5].[7/A">
+            <field name="TEXT">Put a banana in dish</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="~cy6=)KEo:wv4;xld0)9" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="tq!0{LU=+mm4|iMoM+k0" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="$B:bt@GDVfzA)(y@mPn7"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="sE4a3PUwu$nUi2tsMQ@K"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="-p0ppMq2x}xi:LcqNd}?">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
       </block>
     </value>
   </block></xml>

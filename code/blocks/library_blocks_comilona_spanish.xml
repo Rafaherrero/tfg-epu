@@ -214,4 +214,41 @@
         <field name="HUE">230</field>
       </block>
     </value>
+  </block><block type="factory_base" id="Q8tF]NY*iwXdEC~Ls#3p" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">banana_dish</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="`QXyfD{!^IO+J9eu2xs9">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="gK_annJ-@RLA;9-YJ3q#">
+            <field name="TEXT">Poner un plátano en el plato</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="BPsSY{iJei4=StfJv2jo" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="u!5~7mD_TK/SUtcGv~Az" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="z5a^JD;^t~hoAp5j|fyA"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="hH=S9eKLpYA@0t8_K5eL"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="_e0vrS0)XnY2Ge|wUF?M">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
   </block></xml>

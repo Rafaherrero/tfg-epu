@@ -13,5 +13,6 @@
             "goal": "Goal: 360kcal"
         }
     ],
+    "blocks": ["banana_dish"],
     "value": "exercise1"
 }
