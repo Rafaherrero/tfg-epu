@@ -80,3 +80,47 @@ Blockly.JavaScript['spanish_language_banana_dish'] = function(block) {
   var code = 'put_in_dish("banana");';
   return code;
 };
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Blockly.Blocks['spanish_language_fruits_dish'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Poner la fruta")
+        .appendField(new Blockly.FieldDropdown([["aguacate","avocado"], ["cereza","cherries"], ["coco","coconut"], ["frambuesa","raspberry"], ["fresa","strawberry"], ["limón","lemon-1"], ["manzana","apple-1"], ["melocotón","peach"], ["naranja","orange"], ["pera","pear"], ["piña","pineapple"], ["plátano","banana"], ["sandía","watermelon"], ["uvas","grapes"]]), "fruit_dropdown")
+        .appendField("en el plato");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.JavaScript['spanish_language_fruits_dish'] = function(block) {
+  var dropdown_fruit_dropdown = block.getFieldValue('fruit_dropdown');
+  var code = 'put_in_dish("'+dropdown_fruit_dropdown+'");\n';
+  return code;
+};
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Blockly.Blocks['spanish_language_vegetables_dish'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Poner la verdura")
+        .appendField(new Blockly.FieldDropdown([["ajo","garlic"], ["brócoli","broccoli"], ["cebolla","onion-1"], ["col","cabbage"], ["coliflor","cauliflower"], ["espárragos","asparagus"], ["guisante","peas"], ["lechuga","salad-1"], ["papa","potatoes-2"], ["pepino","cucumber"], ["pimiento","pepper"], ["rábano","radish"], ["tomate","tomato"], ["zanahoria","carrot"]]), "vegetables_dropdown")
+        .appendField("en el plato");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(90);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.JavaScript['spanish_language_vegetables_dish'] = function(block) {
+  var dropdown_vegetables_dropdown = block.getFieldValue('vegetables_dropdown');
+  var code = 'put_in_dish("'+dropdown_vegetables_dropdown+'");\n';
+  return code;
+};
