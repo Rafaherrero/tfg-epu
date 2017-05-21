@@ -73,7 +73,7 @@ function initApi(interpreter, scope) {
 }
 
 function put_in_dish(fruta){
-    $('#medium_col_izq').append('<img id="food_'+$('.food_in_dish').length+'" src="img/food/'+fruta+'.svg" class="food_in_dish" />')
+    $('#medium_col_izq').append('<img id="food_'+$('.food_in_dish').length+'" src="img/food/'+fruta+'.svg" class="food_in_dish" alt="'+fruta+'" />')
     $('#food_'+($('.food_in_dish').length-1)).css({'transform' : 'rotate('+(($('.food_in_dish').length)-1)*60+'deg)'})
 }
 
@@ -171,15 +171,19 @@ function check_level(){
     var code = Blockly.JavaScript.workspaceToCode(workspace);
     $('.food_in_dish').remove()
 
-    console.log(code)
-
     var myInterpreter = new Interpreter(code, initApi);
     function nextStep() {
         if (myInterpreter.step()) {
             window.setTimeout(nextStep, 100);
         }
+        else{
+            
+            jQuery.getScript('js/level1/exercise1.js')
+        }
     }
     nextStep();
+
+    
 }
 
 //Buttons and select
