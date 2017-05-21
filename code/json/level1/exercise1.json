@@ -2,8 +2,8 @@
     "spanish_language":[
         {
             "title": "Ejercicio 1: plátanos",
-            "description_game": "En este ejercicio aprenderemos los conceptos básicos. Para ello, colocaremos un único plátano en el plato arrastrando el bloque azul al área blanca. ¡Vamos allá!",
-            "goal": "Meta: 360kcal",
+            "description_game": "¡Bienvenido a Comilona! En este ejercicio aprenderemos los conceptos básicos. Para ello, colocaremos un único plátano en el plato arrastrando el bloque azul al área blanca. Cuando estés listo, presiona el botón play. ¡Vamos allá!",
+            "goal": "Meta: 1 plátano en el plato",
             "correct": "¡Muy bien! ¿Preparado para avanzar?",
             "wrong": "Uh! ¿Estás seguro de haber colocado solo un plátano?"
         }
@@ -11,8 +11,8 @@
     "english_language":[
         {
             "title": "Exercise 1: bananas",
-            "description_game": "In this exercise we will learn the basic concepts. For that, we will put only one banana in the dish dragging the blue block to the white area. Let's go!",
-            "goal": "Goal: 360kcal",
+            "description_game": "Welcome to Comilona! In this exercise we will learn the basic concepts. For that, we will put only one banana in the dish dragging the blue block to the white area. When you are ready, press the play button. Let's go!",
+            "goal": "Goal: 1 banana in the dish",
             "correct": "Well done! Are you ready for the next exercise?",
             "wrong": "Uh! Are you sure that there is only one banana?"
         }

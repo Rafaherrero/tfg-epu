@@ -3,7 +3,10 @@
     "buttons":[
         {"id": "button_level1", "value": "Nivel 1"},
         {"id": "button_level2", "value": "Nivel 2"},
-        {"id": "button_level3", "value": "Nivel 3"}
+        {"id": "button_level3", "value": "Nivel 3"},
+        {"id": "check_level_previous_exercise", "value": "Anterior"},
+        {"id": "check_level_retry_exercise", "value": "¿Reintentar?"},
+        {"id": "check_level_next_exercise", "value": "Siguiente"}
     ],
     "texts":[
         {"id": "level_text", "value": "Niveles: "},

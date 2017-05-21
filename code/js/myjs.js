@@ -7,12 +7,10 @@ $.ajaxPrefilter(function( options, original_Options, jqXHR ) {
     options.async = true;
 });
 
-change_language("english_language")
-
 var blocklyArea = document.getElementById('blocklyArea');
 var blocklyDiv = document.getElementById('blocklyDiv');
 var workspace = Blockly.inject(blocklyDiv, {
-    toolbox: get_blocks(),
+    toolbox: get_blocks(1,1),
     zoom: {
         controls: true,
         wheel: false,
@@ -24,6 +22,8 @@ var workspace = Blockly.inject(blocklyDiv, {
     media: 'img/blockly/',
     trashcan: true
 });
+
+change_language("english_language")
     
 var onresize = function(e) {
     // Compute the absolute coordinates and dimensions of blocklyArea.
@@ -80,30 +80,6 @@ function put_in_dish(fruta){
 Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
 Blockly.JavaScript.addReservedWords('highlightBlock');
 
-function change_level(num_level){
-
-    //All buttons no active
-    $('[id^=button_level]').attr('class', 'pure-button button-xlarge');
-
-    //Selected button as active
-    $('#button_level'+num_level).attr('class', 'pure-button button-xlarge pure-button-active level_button_active');
-
-    //Delete all select options
-    $('#select_exercise').empty();
-
-    //Load all new options onto the select
-    var json_select_options = get_json('json/level'+num_level+'/level'+num_level+'.json');
-
-    for(i=1; i<=json_select_options.exercises;i++){
-        var actual_exercise_json = get_json('json/level'+num_level+'/exercise'+i+'.json');
-
-        $('#select_exercise').append($('<option>', {
-            value: actual_exercise_json.value,
-            text: actual_exercise_json[get_actual_language()][0].title
-        }));
-    }
-}
-
 function change_language(id_language){
     var json_language = get_json('json/languages/'+id_language+'.json');
 
@@ -125,8 +101,32 @@ function change_language(id_language){
     change_exercise(1,1) 
 }
 
+function change_level(num_level){
+
+    //All buttons no active
+    $('[id^=button_level]').attr('class', 'pure-button button-xlarge');
+
+    //Selected button as active
+    $('#button_level'+num_level).attr('class', 'pure-button button-xlarge pure-button-active level_button_active');
+
+    //Delete all select options
+    $('#select_exercise').empty();
+
+    //Total number of exercises
+    var number_exercises = get_total_number_exercises(num_level)
+
+    for(i=1; i<=number_exercises;i++){
+        var actual_exercise_json = get_json('json/level'+num_level+'/exercise'+i+'.json');
+
+        $('#select_exercise').append($('<option>', {
+            value: actual_exercise_json.value,
+            text: actual_exercise_json[get_actual_language()][0].title
+        }));
+    }
+}
+
 function change_exercise(id_level, id_exercise){
-    if (id_level>3)
+    if (id_level>get_total_number_levels())
         id_level=1
     
     if (id_level!=get_actual_level())
@@ -134,8 +134,9 @@ function change_exercise(id_level, id_exercise){
 
     var json_level = get_json('json/level'+id_level+'/exercise'+id_exercise+'.json');
     $('#goal_text').html(json_level[get_actual_language()][0].goal)
-    $('#info_modal_text').html(json_level[get_actual_language()][0].description_game+'<video autoplay loop><source src="video/level1/exercise1.mp4" type="video/mp4" /> </video>')
+    $('#info_modal_text').html(json_level[get_actual_language()][0].description_game+'<video id="instructions_video" autoplay loop><source src="video/level'+id_level+'/exercise'+id_exercise+'.mp4" type="video/mp4" /> </video>')
 
+    workspace.updateToolbox(get_blocks(id_level, id_exercise));
     open_modal('info_modal')
 }
 
@@ -144,20 +145,28 @@ function change_blockly_language(blockly_language){
     $('<script>').attr({src: 'js/blockly/msg/js/'+blockly_language+'.js',id: 'blockly_language_script'}).appendTo('body')
 }
 
-function get_actual_level(){
-    return $('.level_button_active').attr('id').slice(-1)
-}
-
-function get_actual_exercise(){
-    return $('#select_exercise').val().slice(-1)
-}
-
 function get_actual_language(){
     return $('.language_buttons_active').attr('id')
 }
 
-function get_blocks(){
-    var json_blocks = get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json');
+function get_actual_level(){
+    return parseInt($('.level_button_active').attr('id').slice(-1))
+}
+
+function get_actual_exercise(){
+    return parseInt($('#select_exercise').val().slice(-1))
+}
+
+function get_total_number_levels(){
+    return parseInt($('[id^=button_level]').length)
+}
+
+function get_total_number_exercises(id_level){
+    return parseInt(get_json('json/level'+id_level+'/level'+id_level+'.json').exercises)
+}
+
+function get_blocks(id_level, id_exercise){
+    var json_blocks = get_json('json/level'+id_level+'/exercise'+id_exercise+'.json');
     var block_xml = '<xml id="toolbox" style="display: none">'
 
     $.each(json_blocks.blocks, function(i, item) {
@@ -177,13 +186,40 @@ function check_level(){
             window.setTimeout(nextStep, 100);
         }
         else{
-            
             jQuery.getScript('js/level1/exercise1.js')
         }
     }
     nextStep();
+}
 
-    
+function previous_exercise(){
+    if (get_actual_exercise()==1){
+        if(get_actual_level()!=1){
+            change_exercise(get_actual_level()-1,get_total_number_exercises(get_actual_level()-1))
+        }
+        else{
+            change_exercise(1,1)
+        }
+    }
+    else {
+        change_exercise(get_actual_level(),get_actual_exercise()-1)
+        $('#select_exercise').val('exercise'+(get_actual_exercise()-1))
+    }
+}
+
+function next_exercise(){
+    if(get_actual_exercise()==get_total_number_exercises(get_actual_level())){
+        if(get_actual_level()!=get_total_number_levels()){
+            change_exercise(get_actual_level()+1,1)
+        }
+        else{
+            change_exercise(1,1)
+        }
+    }
+    else{
+        change_exercise(get_actual_level(),get_actual_exercise()+1)
+        $('#select_exercise').val('exercise'+(get_actual_exercise()+1))
+    }
 }
 
 //Buttons and select
@@ -199,7 +235,7 @@ $(".language_buttons").click(async function(event) {
     else if (event.target.id=='spanish_language')
         change_blockly_language('es');
     
-    workspace.updateToolbox(get_blocks()); 
+    workspace.updateToolbox(get_blocks(1,1)); 
 })
 
 $('#select_exercise').on('change', function() {
@@ -207,24 +243,19 @@ $('#select_exercise').on('change', function() {
 })
 
 $("#button_previous_level").click(function(){
-    change_exercise();
+    previous_exercise()
 })
 
 $("#button_check_level").click(function(){
-    check_level();
+    check_level()
 })
 
 $("#button_reset_level").click(function(){
-    var actual_level = get_actual_level()
-    var actual_exercise = get_actual_exercise()
-    
-    location.reload();
-
-    change_exercise(actual_level,actual_exercise)
+    location.reload()
 })
 
 $("#button_next_level").click(function(){
-    workspace.updateToolbox(get_blocks());
+    next_exercise()
 })
 
 $("#button_info_level").click(function(){
@@ -232,7 +263,7 @@ $("#button_info_level").click(function(){
 })
 
 $("#button_close_modal").click(function(){
-    close_modal();
+    close_modal()
 })
 
 function open_modal(id_modal){

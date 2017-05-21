@@ -1,0 +1,18 @@
+{
+    "spanish_language":[
+        {
+            "title": "Ejercicio 4: frutas y verduras",
+            "description_game": "Los expertos recomiendan, al menos, 5 porciones de frutas y verduras cada día. Por eso, ahora mezclaremos frutas y verduras. ¡Vamos allá!",
+            "goal": "Meta: 5 frutas y verduras"
+        }
+    ],
+    "english_language":[
+        {
+            "title": "Exercise 4: fruits and vegetables",
+            "description_game": "Experts recommend at least 5 servings of fruits and vegetables each day. That is why we will now mix fruits and vegetables. Let's go!",
+            "goal": "Goal: 5 fruits & vegetables"
+        }
+    ],
+    "blocks": ["banana_dish", "fruits", "vegetables"],
+    "value": "exercise4"
+}

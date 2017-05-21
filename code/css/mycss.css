@@ -132,7 +132,7 @@ footer p, a{
     z-index: 999;
 }
 
-#info_modal p{
+#info_modal p, #check_level_modal p{
     width: 60%;
     height: 50%;
     position: absolute;
@@ -154,16 +154,35 @@ footer p, a{
     padding-right: 15px;
 }
 
+#buttons_check_level{
+    width: 60%;
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
 #info_modal video{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 40%; 
+    width: 35%; 
 }
 
-#info_modal{
+#info_modal, #check_level_modal{
     background: rgba(0, 0, 0, 0.7);
     transition: all .0s;
+}
+
+#check_level_modal button{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 33%; 
 }
 
 #license_modal {
@@ -204,8 +223,7 @@ footer p, a{
     bottom: 0;
     left: 0;
     right: 0;
-    width: 90%;
-    height: 90%;
+    width: 95%;
     margin: auto;
 }
 
