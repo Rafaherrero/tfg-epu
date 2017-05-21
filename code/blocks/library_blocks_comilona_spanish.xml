@@ -35,16 +35,16 @@
       </block>
     </value>
   </block><block type="factory_base" id="(2][`JI]?]Ak~=]|v*{1" deletable="false" movable="false" x="0" y="0">
-    <mutation connections="LEFT"></mutation>
+    <mutation connections="BOTH"></mutation>
     <field name="NAME">fruits</field>
     <field name="INLINE">AUTO</field>
-    <field name="CONNECTIONS">LEFT</field>
+    <field name="CONNECTIONS">BOTH</field>
     <statement name="INPUTS">
       <block type="input_dummy" id="y)F$]MX).YpcoLD/f%}k">
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id="7lnWZ|~7:uSxS7cXx~L~">
-            <field name="TEXT">Frutas: </field>
+            <field name="TEXT">Poner la fruta</field>
             <next>
               <block type="field_dropdown" id="r|m`XR*1pnTpCcH.wVew">
                 <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
@@ -77,6 +77,11 @@
                 <field name="CPU12">watermelon</field>
                 <field name="USER13">uvas</field>
                 <field name="CPU13">grapes</field>
+                <next>
+                  <block type="field_static" id="ULoaBdzySQ?9j]7QZfAP">
+                    <field name="TEXT">en el plato</field>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
@@ -93,9 +98,11 @@
         <field name="TEXT"></field>
       </block>
     </value>
-    <value name="OUTPUTTYPE">
-      <shadow type="type_null" id="4{r5;Zm$19K*n8T]V:*g"></shadow>
-      <block type="type_string" id="qLmf7k%EBQg*/XW@|F+p"></block>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="`)Z*~4ur=|]w94+x[7?P"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="u#k?nKzKif^%xdN$R08X"></shadow>
     </value>
     <value name="COLOUR">
       <block type="colour_hue" id="t)Q7IP~eG1aXPksw.5Lt">
@@ -104,16 +111,16 @@
       </block>
     </value>
   </block><block type="factory_base" id="6ZPrS(dU72}yzg({?I]g" deletable="false" movable="false" x="0" y="0">
-    <mutation connections="LEFT"></mutation>
+    <mutation connections="BOTH"></mutation>
     <field name="NAME">vegetables</field>
     <field name="INLINE">AUTO</field>
-    <field name="CONNECTIONS">LEFT</field>
+    <field name="CONNECTIONS">BOTH</field>
     <statement name="INPUTS">
       <block type="input_dummy" id="=OK}$|Y~_eIu.Ev(lfhh">
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id=")5V#Wu,Z7/d)]yuz]%1p">
-            <field name="TEXT">Verduras y hortalizas:</field>
+            <field name="TEXT">Poner la verdura</field>
             <next>
               <block type="field_dropdown" id="=Fq}0zNhceqAyzBM5Cxm">
                 <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
@@ -146,6 +153,11 @@
                 <field name="CPU12">tomato</field>
                 <field name="USER13">zanahoria</field>
                 <field name="CPU13">carrot</field>
+                <next>
+                  <block type="field_static" id="gzk.7O*Tqsibu4q@Tnnd">
+                    <field name="TEXT">en el plato</field>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
@@ -162,9 +174,11 @@
         <field name="TEXT"></field>
       </block>
     </value>
-    <value name="OUTPUTTYPE">
-      <shadow type="type_null" id="(t`On|n@t9fuSQwOhW;L"></shadow>
-      <block type="type_string" id=";0sF!2rz?IQmr7mb{z|K"></block>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="5{?[*Y:*J_koLr|2/hy/"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="HkksTf9*d|.m%@gh{*a#"></shadow>
     </value>
     <value name="COLOUR">
       <block type="colour_hue" id="n]sVajvrI}HBMWzOL7aA">

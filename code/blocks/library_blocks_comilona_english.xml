@@ -44,7 +44,7 @@
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id="7lnWZ|~7:uSxS7cXx~L~">
-            <field name="TEXT">Fruits: </field>
+            <field name="TEXT">Put the </field>
             <next>
               <block type="field_dropdown" id="r|m`XR*1pnTpCcH.wVew">
                 <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
@@ -77,6 +77,11 @@
                 <field name="CPU12">strawberry</field>
                 <field name="USER13">watermelon</field>
                 <field name="CPU13">watermelon</field>
+                <next>
+                  <block type="field_static" id="[|J^6UuE_NPphz2odsg]">
+                    <field name="TEXT">fruit in dish</field>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
@@ -115,7 +120,7 @@
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id=")5V#Wu,Z7/d)]yuz]%1p">
-            <field name="TEXT">Vegetables: </field>
+            <field name="TEXT">Put the</field>
             <next>
               <block type="field_dropdown" id="=Fq}0zNhceqAyzBM5Cxm">
                 <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
@@ -148,6 +153,11 @@
                 <field name="CPU12">radish</field>
                 <field name="USER13">tomato</field>
                 <field name="CPU13">tomato</field>
+                <next>
+                  <block type="field_static" id="#(WH4zxv?{l}?CcqK:/G">
+                    <field name="TEXT">vegetable in dish</field>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
