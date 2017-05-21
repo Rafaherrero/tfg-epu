@@ -135,8 +135,12 @@ function change_exercise(id_level, id_exercise){
     var json_level = get_json('json/level'+id_level+'/exercise'+id_exercise+'.json');
     $('#goal_text').html(json_level[get_actual_language()][0].goal)
     $('#info_modal_text').html(json_level[get_actual_language()][0].description_game+'<video id="instructions_video" autoplay loop><source src="video/level'+id_level+'/exercise'+id_exercise+'.mp4" type="video/mp4" /> </video>')
+    $('#select_exercise').val('exercise'+id_exercise)
 
-    workspace.updateToolbox(get_blocks(id_level, id_exercise));
+    Blockly.mainWorkspace.clear();
+    workspace.updateToolbox(get_blocks(id_level, id_exercise))
+    $('.food_in_dish').remove()
+    close_modal()
     open_modal('info_modal')
 }
 
@@ -203,7 +207,6 @@ function previous_exercise(){
     }
     else {
         change_exercise(get_actual_level(),get_actual_exercise()-1)
-        $('#select_exercise').val('exercise'+(get_actual_exercise()-1))
     }
 }
 
@@ -218,7 +221,6 @@ function next_exercise(){
     }
     else{
         change_exercise(get_actual_level(),get_actual_exercise()+1)
-        $('#select_exercise').val('exercise'+(get_actual_exercise()+1))
     }
 }
 
