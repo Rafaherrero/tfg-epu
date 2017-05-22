@@ -1,7 +1,7 @@
 const loadJsonFile = require('load-json-file');
 
 //$(window).resize(function(){location.reload();});
-//Tamaño minimo, 1250x750
+//Tamaño minimo, 1200*650
 
 $.ajaxPrefilter(function( options, original_Options, jqXHR ) {
     options.async = true;
