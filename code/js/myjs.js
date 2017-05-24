@@ -244,26 +244,6 @@ $('#select_exercise').on('change', function() {
     change_exercise(get_actual_level(),this.value.slice(-1))
 })
 
-$("#button_previous_level").click(function(){
-    previous_exercise()
-})
-
-$("#button_check_level").click(function(){
-    check_level()
-})
-
-$("#button_reset_level").click(function(){
-    location.reload()
-})
-
-$("#button_next_level").click(function(){
-    next_exercise()
-})
-
-$("#button_info_level").click(function(){
-    open_modal('info_modal')
-})
-
 $("#button_close_modal").click(function(){
     close_modal()
 })

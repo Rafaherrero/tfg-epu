@@ -47,23 +47,23 @@
   </div>
 
   <div class="pure-u-lg-24-24" id="buttons_col_izq">
-    <div class="pure-u-lg-4-24">
-    <input type="hidden"><i class="fa fa-step-backward fa-2x" aria-hidden="true" id="button_previous_level"></i></input>
-    </div>
-    <div class="pure-u-lg-4-24">
-    <input type="hidden"><i class="fa fa-play fa-2x" aria-hidden="true" id="button_check_level"></i></input>
-    </div>
-    <div class="pure-u-lg-4-24">
-    <input type="hidden"><i class="fa fa-repeat fa-2x" aria-hidden="true" id="button_reset_level"></i></input>
-    </div>
-    <div class="pure-u-lg-4-24">
-    <input type="hidden"><i class="fa fa-step-forward fa-2x" aria-hidden="true" id="button_next_level"></i></input>
-    </div>
-    <div class="pure-u-lg-4-24">
-    <input type="hidden"><i class="fa fa-question fa-2x" aria-hidden="true" id="button_info_level"></i></input>
-    </div>
-    </div>
 
+  <div class="pure-u-lg-4-24">
+    <button class="button_no_style" onclick="previous_exercise()"><i class="fa fa-step-backward fa-2x"></i></button>
+    </div>
+    <div class="pure-u-lg-4-24">
+    <button class="button_no_style" onclick="check_level()"><i class="fa fa-play fa-2x"></i></button>
+    </div>
+    <div class="pure-u-lg-4-24">
+    <button class="button_no_style" onclick="location.reload()"><i class="fa fa-repeat fa-2x"></i></button>
+    </div>
+    <div class="pure-u-lg-4-24">
+    <button class="button_no_style" onclick="next_exercise()"><i class="fa fa-step-forward fa-2x"></i></button>
+    </div>
+    <div class="pure-u-lg-4-24">
+    <button class="button_no_style" onclick="open_modal('info_modal')"><i class="fa fa-question fa-2x"></i></button>
+    </div>
+    </div>
      </div>
 
 <div class="pure-u-lg-14-24 offset-lg-1-24" id="blocklyArea">
@@ -100,14 +100,14 @@
 <div id="blocklyDiv" style="position: absolute"></div>
 </div>
 
-<i class="fa fa-times-circle fa-3x" aria-hidden="true" id="button_close_modal"></i>
+<button class="button_no_style" id="button_close_modal" aria-hidden="true" onclick="close_modal()"><i class="fa fa-times-circle fa-3x" ></i></button>
 
 <div class="modal" id="license_modal">
   <ul>
-  <li>Iconos realizados por <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
-  <li>Patrón de fondo: <a href="https://www.toptal.com/designers/subtlepatterns/geometry-2/" title="Subtle Patterns">Subtle Patterns</a></li>
+  <li>Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+  <li>Background pattern: <a href="https://www.toptal.com/designers/subtlepatterns/geometry-2/" title="Subtle Patterns">Subtle Patterns</a></li>
   <li>Blockly: <a href="https://developers.google.com/blockly/" title="Blockly">Blockly</a></li>
-  <li>Intérprete Javascript: <a href="https://github.com/NeilFraser/JS-Interpreter" title="JS-Interpreter">JS-Interpreter</a></li>
+  <li>Javascript Interpreter: <a href="https://github.com/NeilFraser/JS-Interpreter" title="JS-Interpreter">JS-Interpreter</a></li>
   <li>Comilona: <a href="https://github.com/Rafaherrero/tfg-epu" title="JS-Interpreter">Comilona en GitHub</a></li>
   </ul>
 </div>
@@ -120,7 +120,7 @@
   <p id="check_level_modal_text"></p>
   <div id="buttons_check_level" class="pure-button-group" role="group">
     <button class="pure-button button-xlarge" id="check_level_previous_exercise" onclick="previous_exercise()"></button>
-    <button class="pure-button button-xlarge" id="check_level_retry_exercise"></button>
+    <button class="pure-button button-xlarge" id="check_level_retry_exercise" onclick="close_modal()"></button>
     <button class="pure-button button-xlarge" id="check_level_next_exercise" onclick="next_exercise()"></button>
     </div>
 </div>

@@ -238,3 +238,12 @@ footer p, a{
     padding-bottom: 30px;
     transform-origin: bottom;
 }
+
+.button_no_style{
+    border: none;
+    background: none;
+}
+
+.button_no_style:focus {
+  outline: none;
+}
