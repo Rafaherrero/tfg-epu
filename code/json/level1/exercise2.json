@@ -3,14 +3,20 @@
         {
             "title": "Ejercicio 2: 4 plátanos",
             "description_game": "En este ejercicio seguiremos la misma idea que en el caso anterior, salvo que ahora intentaremos colocar 4 plátanos en vez de uno solo. ¡Vamos allá!",
-            "goal": "Meta: 4 plátanos en el plato"
+            "goal": "Meta: 4 plátanos en el plato",
+            "text_1": "¡Muy bien! Veo que ya les estas cogiendo el truco. ¿Preparado para un nuevo reto?",
+            "text_2": "Uh! ¿Estás seguro de que no has puesto menos de 4 plátanos?",
+            "text_3": "Uh! ¿Estás seguro de que no has puesto más de 4 plátanos?"
         }
     ],
     "english_language":[
         {
             "title": "Exercise 2: 4 bananas",
             "description_game": "In this exercise we will continue wih the same idea as in the previous case, but now we will try to put 4 bananas instead of one. Let's go!",
-            "goal": "Goal: 4 bananas in the dish"
+            "goal": "Goal: 4 bananas in the dish",
+            "text_1": "¡Well done! I see that you are getting the hang of it. Are you ready for a new challenge?",
+            "text_2": "Uh! Are you sure that there is not less than 4 bananas?",
+            "text_3": "Uh! Are you sure that there is not more than 4 bananas?"
         }
     ],
     "blocks": ["banana_dish"],

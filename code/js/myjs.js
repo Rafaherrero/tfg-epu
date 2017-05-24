@@ -73,8 +73,13 @@ function initApi(interpreter, scope) {
 }
 
 function put_in_dish(fruta){
+    var sum_degrees = 0
+
+    if (($('.food_in_dish').length)>=6)
+        sum_degrees = 30
+
     $('#medium_col_izq').append('<img id="food_'+$('.food_in_dish').length+'" src="img/food/'+fruta+'.svg" class="food_in_dish" alt="'+fruta+'" />')
-    $('#food_'+($('.food_in_dish').length-1)).css({'transform' : 'rotate('+(($('.food_in_dish').length)-1)*60+'deg)'})
+    $('#food_'+($('.food_in_dish').length-1)).css({'transform' : 'rotate('+(((($('.food_in_dish').length)-1)*60)+sum_degrees)+'deg)'})
 }
 
 Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
@@ -190,7 +195,7 @@ function check_level(){
             window.setTimeout(nextStep, 100);
         }
         else{
-            jQuery.getScript('js/level1/exercise1.js')
+            jQuery.getScript('js/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.js')
         }
     }
     nextStep();
@@ -242,10 +247,6 @@ $(".language_buttons").click(async function(event) {
 
 $('#select_exercise').on('change', function() {
     change_exercise(get_actual_level(),this.value.slice(-1))
-})
-
-$("#button_close_modal").click(function(){
-    close_modal()
 })
 
 function open_modal(id_modal){
