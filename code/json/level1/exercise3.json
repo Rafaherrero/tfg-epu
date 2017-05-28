@@ -2,15 +2,21 @@
     "spanish_language":[
         {
             "title": "Ejercicio 3: frutas",
-            "description_game": "En los casos anteriores solo hemos utilizado el plátano, pero Comilona cuenta con más frutas. Intenta poner 5 distintas en el plato. ¡Vamos allá!",
-            "goal": "Meta: 5 frutas distintas"
+            "description_game": "En los casos anteriores solo hemos utilizado el plátano, pero Comilona cuenta con más frutas. Intenta poner 5 distintas en el plato. Si quieres, puedes mezclar los bloques. ¡Vamos allá!",
+            "goal": "Meta: 5 frutas distintas",
+            "text_1": "¡Genial! ¡Sigue así!",
+            "text_2": "Creo que el número de frutas no es correcto. ¿Me equivoco?",
+            "text_3": "¿Estás seguro de que todas las frutas son distintas?"
         }
     ],
     "english_language":[
         {
             "title": "Exercise 3: fruits",
-            "description_game": "In the previous exercises we have only played with the banana, but Comilona has more fruits. Try to put 5 different in the dish. Let's go!",
-            "goal": "Goal: 5 different fruits"
+            "description_game": "In the previous exercises we have only played with the banana, but Comilona has more fruits. Try to put 5 different in the dish. If you want, you can use both blocks. Let's go!",
+            "goal": "Goal: 5 different fruits",
+            "text_1": "Well done! Keep it up!",
+            "text_2": "I think that the number of fruits is different to 5. I'm wrong?",
+            "text_3": "Are you sure that all the fruits are different?"
         }
     ],
     "blocks": ["banana_dish","fruits_dish"],

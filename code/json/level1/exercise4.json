@@ -3,14 +3,22 @@
         {
             "title": "Ejercicio 4: frutas y verduras",
             "description_game": "Los expertos recomiendan, al menos, 5 porciones de frutas y verduras cada día. Por eso, ahora mezclaremos frutas y verduras. ¡Vamos allá!",
-            "goal": "Meta: 5 frutas y verduras"
+            "goal": "Meta: 5 frutas y verduras",
+            "text_1": "¡Muy bien! Ya estás listo para pasar al siguiente nivel",
+            "text_2": "Creo que el número de frutas y verduras no es correcto. ¿Me equivoco?",
+            "text_3": "No has mezclado frutas y verduras. ¿Por qué no lo intentas de nuevo?",
+            "text_4": "¿Estás seguro de que todas las frutas y verduras son distintas?"
         }
     ],
     "english_language":[
         {
             "title": "Exercise 4: fruits and vegetables",
             "description_game": "Experts recommend at least 5 servings of fruits and vegetables each day. That is why we will now mix fruits and vegetables. Let's go!",
-            "goal": "Goal: 5 fruits & vegetables"
+            "goal": "Goal: 5 fruits & vegetables",
+            "text_1": "Great! Now you are ready for the next level",
+            "text_2": "I think that the number of fruits and vegetables is different to 5. I'm wrong?",
+            "text_3": "You haven't mixed fruits and vegetables. Why dont you try it again?",
+            "text_4": "Are you sure that all the fruits and vegetables are different?"
         }
     ],
     "blocks": ["banana_dish", "fruits_dish", "vegetables_dish"],

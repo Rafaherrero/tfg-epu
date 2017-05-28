@@ -1,0 +1,114 @@
+{
+    "apple-1":{
+        "type": "fruit", 
+        "kcal": "52"
+    },
+    "asparagus":{
+        "type": "vegetable", 
+        "kcal": "21"
+    },
+    "avocado":{
+        "type": "fruit", 
+        "kcal": "160"
+    },
+    "banana":{
+        "type": "fruit", 
+        "kcal": "90"
+    },
+    "broccoli":{
+        "type": "vegetable", 
+        "kcal": "34"
+    },
+    "cabbage":{
+        "type": "vegetable", 
+        "kcal": "25"
+    },
+    "carrot":{
+        "type": "vegetable", 
+        "kcal": "40"
+    },
+    "cauliflower":{
+        "type": "vegetable", 
+        "kcal": "25"
+    },
+    "cherries":{
+        "type": "fruit", 
+        "kcal": "50"
+    },
+    "coconut":{
+        "type": "fruit", 
+        "kcal": "354"
+    },
+    "cucumber":{
+        "type": "vegetable", 
+        "kcal": "16"
+    },
+    "garlic":{
+        "type": "vegetable", 
+        "kcal": "149"
+    },
+    "grapes":{
+        "type": "fruit", 
+        "kcal": "67"
+    },
+    "lemon-1":{
+        "type": "fruit", 
+        "kcal": "29"
+    },
+    "salad-1":{
+        "type": "vegetable", 
+        "kcal": "15"
+    },
+    "onion-1":{
+        "type": "vegetable", 
+        "kcal": "40"
+    },
+    "orange":{
+        "type": "fruit", 
+        "kcal": "47"
+    },
+    "peach":{
+        "type": "fruit", 
+        "kcal": "39"
+    },
+    "pear":{
+        "type": "fruit", 
+        "kcal": "57"
+    },
+    "peas":{
+        "type": "vegetable", 
+        "kcal": "81"
+    },
+    "pepper":{
+        "type": "vegetable", 
+        "kcal": "20"
+    },
+    "pineapple":{
+        "type": "fruit", 
+        "kcal": "50"
+    },
+    "potatoes-2":{
+        "type": "vegetable", 
+        "kcal": "77"
+    },
+    "radish":{
+        "type": "vegetable", 
+        "kcal": "16"
+    },
+    "raspberry":{
+        "type": "fruit", 
+        "kcal": "50"
+    },
+    "strawberry":{
+        "type": "fruit", 
+        "kcal": "33"
+    },
+    "tomato":{
+        "type": "vegetable", 
+        "kcal": "18"
+    },
+    "watermelon":{
+        "type": "fruit", 
+        "kcal": "30"
+    }
+}
