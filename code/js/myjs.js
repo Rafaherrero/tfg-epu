@@ -192,7 +192,7 @@ function check_level(){
     var myInterpreter = new Interpreter(code, initApi);
     function nextStep() {
         if (myInterpreter.step()) {
-            window.setTimeout(nextStep, 100);
+            window.setTimeout(nextStep, 75);
         }
         else{
             jQuery.getScript('js/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.js')

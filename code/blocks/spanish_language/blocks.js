@@ -124,3 +124,50 @@ Blockly.JavaScript['spanish_language_vegetables_dish'] = function(block) {
   var code = 'put_in_dish("'+dropdown_vegetables_dropdown+'");\n';
   return code;
 };
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Blockly.Blocks['spanish_language_loop_1'] = {
+  init: function() {
+    this.appendStatementInput("loop_statements")
+        .setCheck(null)
+        .appendField("Repetir")
+        .appendField(new Blockly.FieldNumber(0, 0), "number_repeat")
+        .appendField("veces");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(300);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.JavaScript['spanish_language_loop_1'] = function(block) {
+  var number_number_repeat = block.getFieldValue('number_repeat');
+  var statements_loop_text = Blockly.JavaScript.statementToCode(block, 'loop_statements');
+  var cnt = chance.string({length: 2})
+  var code = 'for(var '+cnt+'=0; '+cnt+'<'+number_number_repeat+'; '+cnt+'++){'+statements_loop_text+'}\n';
+  return code;
+};
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Blockly.Blocks['spanish_language_loop_2'] = {
+  init: function() {
+    this.appendStatementInput("loop_statements")
+        .setCheck(null)
+        .appendField("Repetir 2 veces");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(300);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.JavaScript['spanish_language_loop_2'] = function(block) {
+  var statements_loop_statements = Blockly.JavaScript.statementToCode(block, 'loop_statements');
+  var cnt = chance.string({length: 2, pool: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'});    
+  var code = 'for(var '+cnt+'=0; '+cnt+'<2; '+cnt+'++){'+statements_loop_statements+'}\n';
+  return code;
+};

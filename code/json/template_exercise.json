@@ -3,15 +3,18 @@
         {
             "title": "Ejercicio x: ",
             "description_game": "",
-            "goal": ""
+            "goal": "",
+            "text_1": ""
         }
     ],
     "english_language":[
         {
             "title": "Exercise x: ",
            "description_game": "",
-            "goal": ""
+            "goal": "",
+            "text_1": ""
         }
     ],
+    "blocks":[""],
     "value": "levelx_exercisex"
 }

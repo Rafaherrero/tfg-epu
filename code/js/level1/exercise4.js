@@ -33,8 +33,6 @@ else{
                 var next=$('#food_'+cnt_j).attr('alt')
                 if ((food_info[actual].type)!=(food_info[next].type)){
                     check_fruits_vegetables=false;
-                    console.log(food_info[actual].type)
-                    console.log(food_info[next].type)
                     $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_1)
                     open_modal('check_level_modal')
                 }
