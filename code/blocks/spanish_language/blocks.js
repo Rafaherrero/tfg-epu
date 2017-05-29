@@ -145,7 +145,7 @@ Blockly.Blocks['spanish_language_loop_1'] = {
 Blockly.JavaScript['spanish_language_loop_1'] = function(block) {
   var number_number_repeat = block.getFieldValue('number_repeat');
   var statements_loop_text = Blockly.JavaScript.statementToCode(block, 'loop_statements');
-  var cnt = chance.string({length: 2})
+  var cnt = chance.string({length: 2, pool: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'});
   var code = 'for(var '+cnt+'=0; '+cnt+'<'+number_number_repeat+'; '+cnt+'++){'+statements_loop_text+'}\n';
   return code;
 };
