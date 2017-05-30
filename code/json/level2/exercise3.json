@@ -1,25 +1,24 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Ejercicio 3: 6 frutas y verduras",
+            "description_game": "En este nivel seguiremos con los bucles, pero ahora tendremos que colocar 6 frutas y verduras. ¡Vamos!",
+            "goal": "Meta: 6 frutas y verduras",
+            "text_1": "Muy bien. Un último reto con bucles y pasaremos al siguiente nivel. ¡Tú puedes!",
+            "text_2": "¿Estás seguro de que hay frutas Y verduras?",
+            "text_3": "Creo que no has puesto la cantidad correcta. ¿Lo volvemos a intentar?"
         }
     ],
     "english_language":[
         {
-            "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Exercise 3: 6 fruits and vegetables",
+            "description_game": "In the this level we will continue with the loops, but now we have to put 6 fruits and vegetables. Let's go!",
+            "goal": "Goal: 6 fruits and vegetables",
+            "text_1": "Well done. One last exercise and we will pass to the next level. You can do it!",
+            "text_2": "Are you sure that you have put fruits and vegetables?",
+            "text_3": "I think that you didn't put the right amount. Why don't we try it again?"
         }
     ],
+    "blocks": ["loop_1","fruits_dish","vegetables_dish"],
     "value": "exercise3"
 }

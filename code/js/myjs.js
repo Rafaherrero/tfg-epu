@@ -1,7 +1,21 @@
 const loadJsonFile = require('load-json-file');
 
-//$(window).resize(function(){location.reload();});
+//$(window).resize();
 //Tamaño minimo, 1200*650
+
+$(window).on('resize', function(){
+    if (($(window).width() <= 1200)||($(window).height() <= 650)){
+        $('#global_body').css('display', 'none')
+        close_modal()
+        open_modal('size_screen_modal')
+        $('#button_close_modal').css('display', 'none')
+    }
+
+    if ( ($(window).width() > 1200) && ($(window).height() > 650) && ($('#global_body').css('display'))=='none' ){
+        location.reload()
+    }
+    onresize()
+})
 
 $.ajaxPrefilter(function( options, original_Options, jqXHR ) {
     options.async = true;
@@ -257,4 +271,10 @@ function open_modal(id_modal){
 function close_modal(){
     $('.modal').css('top','-100vh')
     $('#button_close_modal').css('display','none')
+}
+
+if (($(window).width() <= 1200)||($(window).height() <= 650)){
+    $('#global_body').css('display', 'none')
+    close_modal()
+    open_modal('size_screen_modal')
 }

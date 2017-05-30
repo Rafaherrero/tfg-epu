@@ -133,7 +133,7 @@ footer p, a{
     z-index: 999;
 }
 
-#info_modal p, #check_level_modal p{
+#info_modal p, #check_level_modal p, #size_screen_modal p{
     width: 60%;
     height: 50%;
     position: absolute;
@@ -174,7 +174,7 @@ footer p, a{
     width: 35%; 
 }
 
-#info_modal, #check_level_modal{
+#info_modal, #check_level_modal, #size_screen_modal{
     background: rgba(0, 0, 0, 0.7);
     transition: all .0s;
 }
