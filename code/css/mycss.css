@@ -171,7 +171,8 @@ footer p, a{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 35%; 
+    width: 25vw;
+    height: 25vh; 
 }
 
 #info_modal, #check_level_modal, #size_screen_modal{

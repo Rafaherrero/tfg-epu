@@ -1,17 +1,14 @@
 const loadJsonFile = require('load-json-file');
 
-//$(window).resize();
-//Tamaño minimo, 1200*650
-
 $(window).on('resize', function(){
-    if (($(window).width() <= 1200)||($(window).height() <= 650)){
+    if (($(window).width() <= 1200)||($(window).height() <= 700)){
         $('#global_body').css('display', 'none')
         close_modal()
         open_modal('size_screen_modal')
         $('#button_close_modal').css('display', 'none')
     }
 
-    if ( ($(window).width() > 1200) && ($(window).height() > 650) && ($('#global_body').css('display'))=='none' ){
+    if ( ($(window).width() > 1200) && ($(window).height() > 700) && ($('#global_body').css('display'))=='none' ){
         location.reload()
     }
     onresize()
@@ -56,7 +53,6 @@ var onresize = function(e) {
     blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
 };
 
-window.addEventListener('resize', onresize, true);
 onresize();
 Blockly.svgResize(workspace);
 
@@ -273,7 +269,7 @@ function close_modal(){
     $('#button_close_modal').css('display','none')
 }
 
-if (($(window).width() <= 1200)||($(window).height() <= 650)){
+if (($(window).width() <= 1200)||($(window).height() <= 700)){
     $('#global_body').css('display', 'none')
     close_modal()
     open_modal('size_screen_modal')
