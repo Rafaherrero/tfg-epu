@@ -1,25 +1,26 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Ejercicio 4: 2x2x1 plátanos",
+            "description_game": "Al igual que en el ejercicio 2, pondremos 4 plátanos en el plato, pero ahora intentaremos usar un bucle dentro de otro. ¿Te atreves?",
+            "goal": "Meta: 4 plátanos, 2 bucles",
+            "text_1": "Ya estás listo para nuevos retos. ¡Vamos!",
+            "text_2": "La cantidad de plátanos no es correcta. Inténtalo de nuevo",
+            "text_3": "La solución es correcta, pero no has utilizado un bucle dentro de otro",
+            "text_4": "No has utilizado ningún bucle. Inténtalo de nuevo, pero ahora usa, al menos, dos bucles"
         }
     ],
     "english_language":[
         {
-            "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Exercise 4: 2x2x1 bananas",
+            "description_game": "As in the second exercise, we will put 4 bananas in the dish, but now we will try to use a loop inside another loop. Will you try it?",
+            "goal": "Goal: 4 bananas, 2 loops",
+            "text_1": "Now you are ready for new challenges. C'mon!",
+            "text_2": "The amount of bananas is wrong. Try it again",
+            "text_3": "The solution is correct, but you haven't used a loop inside another",
+            "text_4": "You haven't used any loop. Try it again, but now use, at least, two loops"
         }
     ],
+    "blocks": ["loop_2","banana_dish"],
     "value": "exercise4"
 }

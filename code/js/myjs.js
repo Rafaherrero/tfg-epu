@@ -14,6 +14,11 @@ $(window).on('resize', function(){
     onresize()
 })
 
+$(document).keyup(function(e) {
+  if (e.keyCode === 27)
+    close_modal()
+})
+
 $.ajaxPrefilter(function( options, original_Options, jqXHR ) {
     options.async = true;
 });
