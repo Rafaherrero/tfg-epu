@@ -206,12 +206,11 @@ function check_level(){
 
     var myInterpreter = new Interpreter(code, initApi);
     function nextStep() {
-        if (myInterpreter.step()) {
-            window.setTimeout(nextStep, 50);
-        }
-        else{
-            jQuery.getScript('js/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.js')
-        }
+        if (myInterpreter.step())
+            window.setTimeout(nextStep, 60);
+        
+        else
+            window.setTimeout("jQuery.getScript('js/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.js')", 500)
     }
     nextStep();
 }

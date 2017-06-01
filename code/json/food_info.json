@@ -1,114 +1,170 @@
 {
     "apple-1":{
         "type": "fruit", 
-        "kcal": "52"
+        "kcal": "52",
+        "fat": "0.17",
+        "carbohydrate": "13.81"
     },
     "asparagus":{
         "type": "vegetable", 
-        "kcal": "21"
+        "kcal": "20",
+        "fat": "0.12",
+        "carbohydrates": "3.88"
     },
     "avocado":{
         "type": "fruit", 
-        "kcal": "160"
+        "kcal": "160",
+        "fat": "14.66",
+        "carbohydrates": "8.53"
     },
     "banana":{
         "type": "fruit", 
-        "kcal": "90"
+        "kcal": "89",
+        "fat": "0.33",
+        "carbohydrates": "22.84"
     },
     "broccoli":{
         "type": "vegetable", 
-        "kcal": "34"
+        "kcal": "34",
+        "fat": "0.37",
+        "carbohydrates": "6.64"
     },
     "cabbage":{
         "type": "vegetable", 
-        "kcal": "25"
+        "kcal": "25",
+        "fat": "0.1",
+        "carbohydrates": "5.8"
     },
     "carrot":{
         "type": "vegetable", 
-        "kcal": "40"
+        "kcal": "41",
+        "fat": "0.24",
+        "carbohydrates": "9.58"
     },
     "cauliflower":{
         "type": "vegetable", 
-        "kcal": "25"
+        "kcal": "25",
+        "fat": "0.28",
+        "carbohydrates": "4.97"
     },
     "cherries":{
         "type": "fruit", 
-        "kcal": "50"
+        "kcal": "50",
+        "fat": "0.3",
+        "carbohydrates": "12"
     },
     "coconut":{
         "type": "fruit", 
-        "kcal": "354"
+        "kcal": "354",
+        "fat": "33.49",
+        "carbohydrates": "15.23"
     },
     "cucumber":{
         "type": "vegetable", 
-        "kcal": "16"
+        "kcal": "15",
+        "fat": "0.11",
+        "carbohydrates": "3.63"
     },
     "garlic":{
         "type": "vegetable", 
-        "kcal": "149"
+        "kcal": "149",
+        "fat": "0.5",
+        "carbohydrates": "33.06"
     },
     "grapes":{
         "type": "fruit", 
-        "kcal": "67"
+        "kcal": "67",
+        "fat": "0.4",
+        "carbohydrates": "17"
     },
     "lemon-1":{
         "type": "fruit", 
-        "kcal": "29"
+        "kcal": "29",
+        "fat": "0.3",
+        "carbohydrates": "9.32"
     },
     "salad-1":{
         "type": "vegetable", 
-        "kcal": "15"
+        "kcal": "15",
+        "fat": "0.15",
+        "carbohydrates": "2.87"
     },
     "onion-1":{
         "type": "vegetable", 
-        "kcal": "40"
+        "kcal": "40",
+        "fat": "0.1",
+        "carbohydrates": "9.34"
     },
     "orange":{
         "type": "fruit", 
-        "kcal": "47"
+        "kcal": "47",
+        "fat": "0.12",
+        "carbohydrates": "11.75"
     },
     "peach":{
         "type": "fruit", 
-        "kcal": "39"
+        "kcal": "39",
+        "fat": "0.25",
+        "carbohydrates": "9.54"
     },
     "pear":{
         "type": "fruit", 
-        "kcal": "57"
+        "kcal": "57",
+        "fat": "0.14",
+        "carbohydrates": "15.23"
     },
     "peas":{
         "type": "vegetable", 
-        "kcal": "81"
+        "kcal": "81",
+        "fat": "0.4",
+        "carbohydrates": "14.45"
     },
     "pepper":{
         "type": "vegetable", 
-        "kcal": "20"
+        "kcal": "20",
+        "fat": "0.17",
+        "carbohydrates": "4.64"
     },
     "pineapple":{
         "type": "fruit", 
-        "kcal": "50"
+        "kcal": "50",
+        "fat": "0.12",
+        "carbohydrates": "13.12"
     },
     "potatoes-2":{
         "type": "vegetable", 
-        "kcal": "77"
+        "kcal": "77",
+        "fat": "0.09",
+        "carbohydrates": "17.49"
     },
     "radish":{
         "type": "vegetable", 
-        "kcal": "16"
+        "kcal": "16",
+        "fat": "0.1",
+        "carbohydrates": "3.4"
     },
     "raspberry":{
         "type": "fruit", 
-        "kcal": "50"
+        "kcal": "52",
+        "fat": "0.65",
+        "carbohydrates": "11.94"
     },
     "strawberry":{
         "type": "fruit", 
-        "kcal": "33"
+        "kcal": "32",
+        "fat": "0.3",
+        "carbohydrates": "7.68"
     },
     "tomato":{
         "type": "vegetable", 
-        "kcal": "18"
+        "kcal": "18",
+        "fat": "0.11",
+        "carbohydrates": "4.01"
     },
     "watermelon":{
         "type": "fruit", 
-        "kcal": "30"
+        "kcal": "30",
+        "fat": "0.15",
+        "carbohydrates": "7.55"
     }
 }

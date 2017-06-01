@@ -1,25 +1,22 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Ejercicio 1: toda la fruta que quieras",
+            "description_game": "Hasta ahora hemos utilizado únicamente bloques con lo que queremos hacer, sin embargo, existen las funciones, a la que les podemos pasar los datos que queremos que usen. ¡Pon lo que quieras en el plato!",
+            "goal": "Meta: frutas en el plato",
+            "text_1": "¡Muy bien! ¿Qué tal si lo complicamos un poco más?",
+            "text_2": "No has puesto ninguna fruta en el plato"
         }
     ],
     "english_language":[
         {
-            "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Exercise 1: all the fruit you want",
+            "description_game": "So far we have used only blocks with what we want to do, however, there are functions, to which we can pass the data we want them to use. Put whatever you want on the dish!",
+            "goal": "Goal: fruits in the dish",
+            "text_1": "Well done! What if we complicate it a bit more?",
+            "text_2": "You haven't put any fruit on the dish"
         }
     ],
-    "value": "exercisex"
+    "blocks": ["dish","fruits"],
+    "value": "exercise1"
 }
