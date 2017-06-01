@@ -1,25 +1,26 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Ejercicio 2: funciones y bucles",
+            "description_game": "En este nivel mezclaremos bucles y funciones. Pon 3 manzanas, 3 lechugas y 3 naranjas en el plato. ¡Tú puedes!",
+            "goal": "Meta: funciones y bucles",
+            "text_1": "¡Muy bien! En el siguiente nivel veremos los condicionales ¿Vamos?",
+            "text_2": "Has puesto una cantidad distinta de los 9 alimentos que se pedían. Si tienes alguna duda puedes pulsar el icono '?' en cualquier momento",
+            "text_3": "No has utilizado bucles. Inténtalo de nuevo",
+            "text_4": "Alguno de los alimentos no es ni una manzana, ni una lechuga, ni una naranja"
         }
     ],
     "english_language":[
         {
-            "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Exercise 2: functions and loops",
+            "description_game": "In this level we will mix loops and functions. Put 3 apples, 3 lettuces and 3 oranges in the dish. You can!",
+            "goal": "Goal: functions and loops",
+            "text_1": "Well done! What if we complicate it a bit more?",
+            "text_2": "You have put a different amount of the 9 foods that were requested. If you have any questions, you can click the '?' icon anytime",
+            "text_3": "You haven't used loops. Try it again",
+            "text_4": "Some of the food is neither an apple or a lettuce or an orange"
         }
     ],
-    "value": "exercisex"
+    "blocks": ["loop_1","dish", "fruits","vegetables"],
+    "value": "exercise2"
 }
