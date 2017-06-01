@@ -1,25 +1,24 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Ejercicio 3: primer condicional",
+            "description_game": "Ahora aprenderemos a usar los condicionales. La meta es colocar un plátano en el plato, pero se tiene que cumplir la condición propuesta. ¿Lo intentamos?",
+            "goal": "Meta: 1 plátano en el plato",
+            "text_1": "¡Genial! Lo estás haciendo fenomenal",
+            "text_2": "O no se ha cumplido la condición o has puesto más de un plátano",
+            "text_3": "No has utilizado el condicional. Inténtalo de nuevo"
         }
     ],
     "english_language":[
         {
-            "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Exercise 3: first conditional",
+            "description_game": "Now we will learn to use conditionals. The goal is to put a banana in the dish, but it has to fulfill the proposed condition. We tried?",
+            "goal": "Goal: 1 banana in dish",
+            "text_1": "Awesome! You are doing phenomenal",
+            "text_2": "Either the condition has not been fulfilled or you have put more than one banana",
+            "text_3": "You haven't used the conditional. Try again"
         }
     ],
-    "value": "exercisex"
+    "blocks": ["conditional","banana_dish","fruits","vegetables"],
+    "value": "exercise3"
 }

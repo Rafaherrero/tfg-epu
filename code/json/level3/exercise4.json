@@ -1,25 +1,28 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Ejercicio 4: condicional con bucle",
+            "description_game": "Este ejercicio es igual que el anterior, pero ahora pondremos 6 plátanos utilizando un condicional y un bucle. ¡Vamos!",
+            "goal": "Meta: 6 plátanos en el plato",
+            "text_1": "¡Perfecto! Sólo estás a un paso del final",
+            "text_2": "O no se ha cumplido la condición o has puesto una cantidad diferente a 6 plátanos",
+            "text_3": "No has utilizado el condicional. Inténtalo de nuevo",
+            "text_4": "No has utilizado el bucle. Inténtalo de nuevo",
+            "text_5": "No has utilizado ni un bucle ni un condicional. ¿Por qué no empiezas el nivel de nuevo?"
         }
     ],
     "english_language":[
         {
-            "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Exercise 4: conditional with loop",
+            "description_game": "This exercise is the same as the previous one, but now we will put 6 bananas using a conditional and a loop. Let's go!",
+            "goal": "Goal: 6 bananas in dish",
+            "text_1": "Perfect! You're just one step away from the end",
+            "text_2": "Either the condition has not been fulfilled or you have put a different amount than 6 bananas",
+            "text_3": "You haven't used the conditional. Try again",
+            "text_4": "You haven't used the loop. Try again",
+            "text_5": "You have not used a loop or a conditional. Why don't you start the level again?"
         }
     ],
-    "value": "exercisex"
+    "blocks": ["conditional","loop_1","banana_dish","fruits","vegetables"],
+    "value": "exercise4"
 }

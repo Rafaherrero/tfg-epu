@@ -12,10 +12,9 @@ Blockly.Blocks['spanish_language_dish'] = {
 };
 
 Blockly.JavaScript['spanish_language_dish'] = function(block) {
-  var value_put_in_dish = Blockly.JavaScript.valueToCode(block, 'put_in_dish', Blockly.JavaScript.ORDER_ATOMIC);
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
-  return code;
+    var value_put_in_dish = Blockly.JavaScript.valueToCode(block, 'put_in_dish', Blockly.JavaScript.ORDER_ATOMIC);
+    var code = 'put_in_dish'+value_put_in_dish+';\n';
+    return code;;
 };
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -33,11 +32,9 @@ Blockly.Blocks['spanish_language_fruits'] = {
 };
 
 Blockly.JavaScript['spanish_language_fruits'] = function(block) {
-  var dropdown_fruit_dropdown = block.getFieldValue('fruit_dropdown');
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.JavaScript.ORDER_NONE];
+    var dropdown_fruit_dropdown = block.getFieldValue('fruit_dropdown');
+    var code = '"'+dropdown_fruit_dropdown+'"'
+    return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -55,11 +52,9 @@ Blockly.Blocks['spanish_language_vegetables'] = {
 };
 
 Blockly.JavaScript['spanish_language_vegetables'] = function(block) {
-  var dropdown_vegetables_dropdown = block.getFieldValue('vegetables_dropdown');
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.JavaScript.ORDER_NONE];
+    var dropdown_vegetables_dropdown = block.getFieldValue('vegetables_dropdown');
+    var code = '"'+dropdown_vegetables_dropdown+'"';
+    return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -129,11 +124,12 @@ Blockly.JavaScript['spanish_language_vegetables_dish'] = function(block) {
 
 Blockly.Blocks['spanish_language_loop_1'] = {
   init: function() {
-    this.appendStatementInput("loop_statements")
-        .setCheck(null)
+    this.appendDummyInput()
         .appendField("Repetir")
         .appendField(new Blockly.FieldNumber(0, 0), "number_repeat")
         .appendField("veces");
+    this.appendStatementInput("loop_statements")
+        .setCheck(null);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(300);
@@ -154,9 +150,10 @@ Blockly.JavaScript['spanish_language_loop_1'] = function(block) {
 
 Blockly.Blocks['spanish_language_loop_2'] = {
   init: function() {
-    this.appendStatementInput("loop_statements")
-        .setCheck(null)
+    this.appendDummyInput()
         .appendField("Repetir 2 veces");
+    this.appendStatementInput("loop_statements")
+        .setCheck(null);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(300);
@@ -169,5 +166,39 @@ Blockly.JavaScript['spanish_language_loop_2'] = function(block) {
   var statements_loop_statements = Blockly.JavaScript.statementToCode(block, 'loop_statements');
   var cnt = chance.string({length: 2, pool: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'});    
   var code = 'for(var '+cnt+'=0; '+cnt+'<2; '+cnt+'++){'+statements_loop_statements+'}\n';
+  return code;
+};
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Blockly.Blocks['spanish_language_conditional'] = {
+  init: function() {
+    this.appendValueInput("conditional_input")
+        .setCheck("String")
+        .appendField("Si");
+    this.appendDummyInput()
+        .appendField("tiene más")
+        .appendField(new Blockly.FieldDropdown([["calorías","kcal"], ["carbohidratos","carbohydrates"], ["grasas","fat"]]), "dropdown_conditional")
+        .appendField("que");
+    this.appendValueInput("conditional_input_2")
+        .setCheck("String");
+    this.appendStatementInput("statement_input")
+        .setCheck("String")
+        .appendField("entonces");
+    this.setColour(45);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.JavaScript['spanish_language_conditional'] = function(block) {
+  var value_conditional_input = Blockly.JavaScript.valueToCode(block, 'conditional_input', Blockly.JavaScript.ORDER_ATOMIC);
+  var dropdown_dropdown_conditional = block.getFieldValue('dropdown_conditional');
+  var value_conditional_input_2 = Blockly.JavaScript.valueToCode(block, 'conditional_input_2', Blockly.JavaScript.ORDER_ATOMIC);
+  var statements_statement_input = Blockly.JavaScript.statementToCode(block, 'statement_input');
+
+  var food_info = get_json('json/food_info.json');
+
+  var code = 'if( '+ food_info[value_conditional_input.slice(2,-2)][dropdown_dropdown_conditional] +' > ' + food_info[value_conditional_input_2.slice(2,-2)][dropdown_dropdown_conditional] + '){' + statements_statement_input + '}' ;
   return code;
 };

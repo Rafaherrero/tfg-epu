@@ -13,9 +13,6 @@ else{
 
     var code = Blockly.JavaScript.workspaceToCode(workspace);
     var includes = code.includes("for(var")
-    console.log(code)
-    console.log(includes)
-    console.log(different)
 
     if(!different&&includes)
         show_solution('text_1')

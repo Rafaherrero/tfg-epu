@@ -17,8 +17,8 @@
             "goal": "Goal: 6 fruits and vegetables",
             "text_1": "Well done. One last exercise and we will pass to the next level. You can do it!",
             "text_2": "Are you sure that you have put fruits and vegetables?",
-            "text_3": "I think that you didn't put the right amount. Why don't we try it again?",
-            "text_4": "I think that you have forgotten to use loops. What about try it again?"
+            "text_3": "I think that you didn't put the right amount. Why don't we try again?",
+            "text_4": "I think that you have forgotten to use loops. What about try again?"
         }
     ],
     "blocks": ["loop_1","fruits_dish","vegetables_dish"],

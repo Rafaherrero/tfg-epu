@@ -1,25 +1,30 @@
 {
     "spanish_language":[
         {
-            "title": "Ejercicio x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Ejercicio 5: ejercicio final",
+            "description_game": "En este último ejercicio mezclaremos todo lo aprendido, funciones, bucles y condicionales. Utilizando todo, pon 6 frutas y verduras en el plato",
+            "goal": "Meta: 6 frutas y verduras",
+            "text_1": "Lo has hecho genial. ¿Te apetece volver a jugar?",
+            "text_2": "O no se ha cumplido la condición o has puesto una cantidad diferente a 6 frutas y verduras",
+            "text_3": "No has utilizado el condicional. Inténtalo de nuevo",
+            "text_4": "No has utilizado el bucle. Inténtalo de nuevo",
+            "text_5": "No has utilizado ni un bucle ni un condicional. ¿Por qué no empiezas el nivel de nuevo?",
+            "text_6": "No has mezclado frutas y verduras. Inténtalo de nuevo"
         }
     ],
     "english_language":[
         {
-            "title": "Exercise x: ",
-            "description_game": [
-        {
-            "id": "1",
-            "text": ""
-        }
-    ]
+            "title": "Exercise 5: final exercise",
+            "description_game": "In this last exercise we will mix everything learned, functions, loops and conditionals. Using everything, put 6 fruits and vegetables in the plate",
+            "goal": "Goal: 6 fruits and vegetables",
+            "text_1": "You've done great. Do you want to play again?",
+            "text_2": "Either the condition has not been fulfilled or you have put a different amount than 6 fruits and vegetables",
+            "text_3": "You haven't used the conditional. Try again",
+            "text_4": "You haven't used the loop. Try again",
+            "text_5": "You have not used a loop or a conditional. Why don't you start the level again?",
+            "text_6": "You have not mixed fruits and vegetables. Try again"
         }
     ],
-    "value": "exercisex"
+    "blocks": ["conditional","loop_1","dish","fruits","vegetables"],
+    "value": "exercise5"
 }

@@ -16,7 +16,7 @@
             "description_game": "As in the second exercise, we will put 4 bananas in the dish, but now we will try to use a loop inside another loop or two in a row. Will you try it?",
             "goal": "Goal: 4 bananas, 2 loops",
             "text_1": "Now you are ready for new challenges. C'mon!",
-            "text_2": "The amount of bananas is wrong. Try it again",
+            "text_2": "The amount of bananas is wrong. Try again",
             "text_3": "The solution is correct, but you haven't used a loop inside another or two loops in a row",
             "text_4": "You haven't used any loop. Try it again, but now use, at least, two loops"
         }

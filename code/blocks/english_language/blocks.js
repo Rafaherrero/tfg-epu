@@ -124,11 +124,12 @@ Blockly.JavaScript['english_language_vegetables_dish'] = function(block) {
 
 Blockly.Blocks['english_language_loop_1'] = {
   init: function() {
-    this.appendStatementInput("loop_statements")
-        .setCheck(null)
+    this.appendDummyInput()
         .appendField("Repeat")
         .appendField(new Blockly.FieldNumber(0, 0), "number_repeat")
         .appendField("times");
+    this.appendStatementInput("loop_statements")
+        .setCheck(null);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(300);
@@ -149,9 +150,10 @@ Blockly.JavaScript['english_language_loop_1'] = function(block) {
 
 Blockly.Blocks['english_language_loop_2'] = {
   init: function() {
-    this.appendStatementInput("loop_statements")
-        .setCheck(null)
+    this.appendDummyInput()
         .appendField("Repeat 2 times");
+    this.appendStatementInput("loop_statements")
+        .setCheck(null);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(300);
@@ -164,5 +166,41 @@ Blockly.JavaScript['english_language_loop_2'] = function(block) {
   var statements_loop_statements = Blockly.JavaScript.statementToCode(block, 'loop_statements');
   var cnt = chance.string({length: 2, pool: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'});    
   var code = 'for(var '+cnt+'=0; '+cnt+'<2; '+cnt+'++){'+statements_loop_statements+'}\n';
+  return code;
+};
+
+///////////////////////////////////////////////////////////////////////////////////
+
+Blockly.Blocks['english_language_conditional'] = {
+  init: function() {
+    this.appendValueInput("conditional_input")
+        .setCheck("String")
+        .appendField("If");
+    this.appendDummyInput()
+        .appendField("has more")
+        .appendField(new Blockly.FieldDropdown([["carbohydrates","carbohydrates"], ["energy","kcal"], ["fat","fat"]]), "dropdown_conditional")
+        .appendField("than");
+    this.appendValueInput("conditional_input_2")
+        .setCheck("String");
+    this.appendStatementInput("statement_input")
+        .setCheck(null)
+        .appendField("then");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(45);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
+Blockly.JavaScript['english_language_conditional'] = function(block) {
+  var value_conditional_input = Blockly.JavaScript.valueToCode(block, 'conditional_input', Blockly.JavaScript.ORDER_ATOMIC);
+  var dropdown_dropdown_conditional = block.getFieldValue('dropdown_conditional');
+  var value_conditional_input_2 = Blockly.JavaScript.valueToCode(block, 'conditional_input_2', Blockly.JavaScript.ORDER_ATOMIC);
+  var statements_statement_input = Blockly.JavaScript.statementToCode(block, 'statement_input');
+
+  var food_info = get_json('json/food_info.json');
+
+  var code = 'if( '+ food_info[value_conditional_input.slice(2,-2)][dropdown_dropdown_conditional] +' > ' + food_info[value_conditional_input_2.slice(2,-2)][dropdown_dropdown_conditional] + '){' + statements_statement_input + '}' ;
   return code;
 };

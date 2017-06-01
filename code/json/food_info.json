@@ -3,7 +3,7 @@
         "type": "fruit", 
         "kcal": "52",
         "fat": "0.17",
-        "carbohydrate": "13.81"
+        "carbohydrates": "13.81"
     },
     "asparagus":{
         "type": "vegetable", 

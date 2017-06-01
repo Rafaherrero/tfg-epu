@@ -271,8 +271,7 @@
     <field name="INLINE">AUTO</field>
     <field name="CONNECTIONS">BOTH</field>
     <statement name="INPUTS">
-      <block type="input_statement" id="~V#jOqF/2/ftzKyC6BLI">
-        <field name="INPUTNAME">loop_statements</field>
+      <block type="input_dummy" id="zpY)v|a*_Hoe3aQFr#o!">
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id="2O*cz]L:([H@?vktMrS]">
@@ -293,10 +292,16 @@
             </next>
           </block>
         </statement>
-        <value name="TYPE">
-          <shadow type="type_null" id="`6_l$LViK*N=.D7zlmdw"></shadow>
-          <block type="type_null" id="cx?ks:)/V]%,gidv-|;`"></block>
-        </value>
+        <next>
+          <block type="input_statement" id="~V#jOqF/2/ftzKyC6BLI">
+            <field name="INPUTNAME">loop_statements</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="`6_l$LViK*N=.D7zlmdw"></shadow>
+              <block type="type_null" id="cx?ks:)/V]%,gidv-|;`"></block>
+            </value>
+          </block>
+        </next>
       </block>
     </statement>
     <value name="TOOLTIP">
@@ -327,18 +332,23 @@
     <field name="INLINE">AUTO</field>
     <field name="CONNECTIONS">BOTH</field>
     <statement name="INPUTS">
-      <block type="input_statement" id="Duu/MQ]ehk=i3smK0wFb">
-        <field name="INPUTNAME">loop_statements</field>
+      <block type="input_dummy" id="ae(8ASx0]lI(?Uxeae%A">
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id="XD/Ed-sga,G{oWg2YS=`">
             <field name="TEXT">Repeat 2 times</field>
           </block>
         </statement>
-        <value name="TYPE">
-          <shadow type="type_null" id="S6;v)DeZ?ApLQ?Vh5:ss"></shadow>
-          <block type="type_null" id="MpdXQ:lj$OAf}}*K]57w"></block>
-        </value>
+        <next>
+          <block type="input_statement" id="Duu/MQ]ehk=i3smK0wFb">
+            <field name="INPUTNAME">loop_statements</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="S6;v)DeZ?ApLQ?Vh5:ss"></shadow>
+              <block type="type_null" id="MpdXQ:lj$OAf}}*K]57w"></block>
+            </value>
+          </block>
+        </next>
       </block>
     </statement>
     <value name="TOOLTIP">
@@ -361,6 +371,100 @@
       <block type="colour_hue" id="x/z?:=3$98g5#?o^=]^T">
         <mutation colour="#a55ba5"></mutation>
         <field name="HUE">300</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="lI1r3$3(]p9HA=[lWg,@" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">conditional</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="CL{bYchI:AkY1BK!onu4">
+        <field name="INPUTNAME">conditional_input</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="NBx1]IEls_E:4mE%F;bs">
+            <field name="TEXT">If</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="y?fE.Zk}GpwEQX~B/3Z."></shadow>
+          <block type="type_string" id="VMbcngj}h.cvaQ{XK{}j"></block>
+        </value>
+        <next>
+          <block type="input_dummy" id="o~}shR$a/.|rxvN|LpZz">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="o9[;-;Dq!-C2NrNCJm_t">
+                <field name="TEXT">has more</field>
+                <next>
+                  <block type="field_dropdown" id="uz$,e!H`gdN=83|6;F4E">
+                    <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                    <field name="FIELDNAME">dropdown_conditional</field>
+                    <field name="USER0">carbohydrates</field>
+                    <field name="CPU0">carbohydrates</field>
+                    <field name="USER1">energy</field>
+                    <field name="CPU1">kcal</field>
+                    <field name="USER2">fat</field>
+                    <field name="CPU2">fat</field>
+                    <next>
+                      <block type="field_static" id=";e^V~E?v4jkLus1JO)f4">
+                        <field name="TEXT">than</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_value" id=":}yeWS0c1n-iI*lVy*U9">
+                <field name="INPUTNAME">conditional_input_2</field>
+                <field name="ALIGN">LEFT</field>
+                <value name="TYPE">
+                  <shadow type="type_null" id="IHIfw+qbQDHr32wrG+RC"></shadow>
+                  <block type="type_string" id=")tLVBx([M/QmuY}ANi;!"></block>
+                </value>
+                <next>
+                  <block type="input_statement" id="$HWqkyY}2H%R.d*WaX-#">
+                    <field name="INPUTNAME">statement_input</field>
+                    <field name="ALIGN">LEFT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id="=0w$=NI:{QJnQK)rf-N]">
+                        <field name="TEXT">then</field>
+                      </block>
+                    </statement>
+                    <value name="TYPE">
+                      <shadow type="type_null" id="M@aTOD6W*vZ#ko+fW36Y"></shadow>
+                      <block type="type_null" id="@1!=N}{)P8k,i%~it5!/"></block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="gShc7aQegq$VeQ^vfXpS" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="aI@9`aVX/ZL7A$Xjbczy" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="!Sa]xh*Jq,|+@Mw.1$g."></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="s+zkD:4icy/}u%2tz|*3"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="{(RF#{GQ|^i|z~?6@#$M">
+        <mutation colour="#a5935b"></mutation>
+        <field name="HUE">45</field>
       </block>
     </value>
   </block></xml>
