@@ -189,9 +189,9 @@ app.on('window-all-closed', function () {
   if (reopenMenuItem) reopenMenuItem.enabled = true
 })
 
-//Para eliminar el menu por completo
+//No menu
 /* 
 app.on('browser-window-created',function(e,window) {
       window.setMenu(null);
-  });
+});
 */

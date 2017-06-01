@@ -1,5 +1,9 @@
 const loadJsonFile = require('load-json-file');
 
+//Variable to control the loading of json files
+//This variable has to set to false when packaging
+var desarrollo = false;
+
 $(window).on('resize', function(){
     if (($(window).width() <= 1200)||($(window).height() <= 700)){
         $('#global_body').css('display', 'none')
@@ -62,7 +66,10 @@ onresize();
 Blockly.svgResize(workspace);
 
 function get_json(path_to_json){
-    return loadJsonFile.sync(path_to_json);
+    if(!desarrollo)
+        return loadJsonFile.sync('resources/app.asar.unpacked/'+path_to_json);
+    else
+        return loadJsonFile.sync(path_to_json);
 }
 
 function highlightBlock(id) {
@@ -253,7 +260,7 @@ $("[id^=button_level]").click(function(event) {
     change_exercise(event.target.id.slice(-1),1)
 })
 
-$(".language_buttons").click(async function(event) {
+$(".language_buttons").click(function(event) {
     change_language(event.target.id)
 
     if(event.target.id=='english_language')
