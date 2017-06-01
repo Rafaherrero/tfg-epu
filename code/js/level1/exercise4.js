@@ -1,6 +1,5 @@
 if ((($('.food_in_dish').length)!=5)){
-    $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_2)
-    open_modal('check_level_modal')
+    show_solution('text_2')
 }
 else{
     var check_different=true;
@@ -12,8 +11,7 @@ else{
         while(cnt_j<5&&check_different){
             if (($('#food_'+cnt_i).attr('alt'))==($('#food_'+cnt_j).attr('alt'))){
                 check_different=false;
-                $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_4)
-                open_modal('check_level_modal')
+                show_solution('text_4')
             }
             cnt_j++
         }
@@ -33,17 +31,14 @@ else{
                 var next=$('#food_'+cnt_j).attr('alt')
                 if ((food_info[actual].type)!=(food_info[next].type)){
                     check_fruits_vegetables=false;
-                    $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_1)
-                    open_modal('check_level_modal')
+                    show_solution('text_1')
                 }
                 cnt_j++
             }
             cnt_i++
         }
 
-        if(check_fruits_vegetables){
-            $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_3)
-            open_modal('check_level_modal')
-        }
+        if(check_fruits_vegetables)
+            show_solution('text_3')
     }
 }

@@ -3,7 +3,10 @@
     "buttons":[
         {"id": "button_level1", "value": ""},
         {"id": "button_level2", "value": ""},
-        {"id": "button_level3", "value": ""}
+        {"id": "button_level3", "value": ""},
+        {"id": "check_level_previous_exercise", "value": ""},
+        {"id": "check_level_retry_exercise", "value": ""},
+        {"id": "check_level_next_exercise", "value": ""}
     ],
     "texts":[
         {"id": "level_text", "value": ""},

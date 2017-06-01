@@ -207,7 +207,7 @@ function check_level(){
     var myInterpreter = new Interpreter(code, initApi);
     function nextStep() {
         if (myInterpreter.step()) {
-            window.setTimeout(nextStep, 75);
+            window.setTimeout(nextStep, 50);
         }
         else{
             jQuery.getScript('js/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.js')
@@ -242,6 +242,11 @@ function next_exercise(){
     else{
         change_exercise(get_actual_level(),get_actual_exercise()+1)
     }
+}
+
+function show_solution(id_text){
+    $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0][id_text])
+    open_modal('check_level_modal')
 }
 
 //Buttons and select

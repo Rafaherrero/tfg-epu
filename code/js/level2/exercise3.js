@@ -1,6 +1,5 @@
 if (($('.food_in_dish').length)!=6){
-    $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_3)
-    open_modal('check_level_modal')
+    show_solution('text_3')
 }
 else {
     var code = Blockly.JavaScript.workspaceToCode(workspace);
@@ -25,15 +24,12 @@ else {
     }
 
     if(!check_fruits_vegetables){
-        $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_2)
-        open_modal('check_level_modal')
+        show_solution('text_2')
     }
     else if (includes){
-        $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_1)
-        open_modal('check_level_modal')
+        show_solution('text_1')
     }
     else{
-        $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_4)
-        open_modal('check_level_modal')
+        show_solution('text_4')
     }
 }

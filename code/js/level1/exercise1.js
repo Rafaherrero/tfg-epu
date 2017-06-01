@@ -1,8 +1,5 @@
-if (($('.food_in_dish').length)==1){
-    $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_1)
-    open_modal('check_level_modal')
-}
-else{
-    $('#check_level_modal_text').html(get_json('json/level'+get_actual_level()+'/exercise'+get_actual_exercise()+'.json')[get_actual_language()][0].text_2)
-    open_modal('check_level_modal')
-}
+if (($('.food_in_dish').length)==1)
+    show_solution('text_1')
+
+else
+    show_solution('text_2')
