@@ -2,13 +2,13 @@
     "spanish_language":[
         {
             "title": "Nivel 3",
-            "description_level": ""
+            "description_level": "Este último nivel repasa todos los conceptos anteriores junto con dos nuevos, las funciones y los condicionales"
         }
     ],
     "english_language":[
         {
             "title": "Level 3",
-            "description_level": ""
+            "description_level": "This last level reviews all the previous concepts along with two new ones, the functions and the conditionals"
         }
     ],
     "exercises": "5"

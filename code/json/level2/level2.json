@@ -2,13 +2,13 @@
     "spanish_language":[
         {
             "title": "Nivel 2",
-            "description_level": ""
+            "description_level": "Este nivel incluye nuevos conceptos de programación, como lo son los bucles"
         }
     ],
     "english_language":[
         {
             "title": "Level 2",
-            "description_level": ""
+            "description_level": "This level includes new programming concepts, such as loops"
         }
     ],
     "exercises": "4"
