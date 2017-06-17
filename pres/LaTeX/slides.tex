@@ -1,0 +1,235 @@
+\documentclass{beamer}
+%\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newcommand{\beamer}{\textsc{beamer}}
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Título corto]{Título Largo}
+\author[Autor]{Autor}
+\institute[ULL]{Universidad de La Laguna}
+\date[05-10-2015]{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Madrid}
+%\usetheme{Warsaw}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{pantone254}{RGB}{122,59,122}
+\definecolor{pantone3015}{RGB}{0,88,147}
+\definecolor{pantone432}{RGB}{56,61,66}
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=pantone254}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=pantone3015}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=pantone432}
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=pantone254}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=pantone3015}
+\setbeamercolor*{block title}{bg=pantone3015,fg=white}
+\setbeamercolor*{alerted text}{fg=pantone432}
+\setbeamercolor*{item projected}{fg=pantone254}
+\setbeamercolor*{section in toc shaded}{use=structure,fg=structure.fg}
+\setbeamercolor*{section in toc}{fg=pantone3015}
+\setbeamercolor*{subsection in toc shaded}{fg=pantone3015}
+\setbeamercolor*{subsection in toc}{fg=pantone432}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+  \includegraphics[width=0.15\textwidth]{img/ullesc.eps}
+  \hspace*{7.5cm}
+  \includegraphics[width=0.16\textwidth]{img/etsii.eps}
+  \titlepage
+
+  \begin{scriptsize}
+    \begin{center}
+     Escuela Superior de Ingeniería y Tecnología \\
+     Universidad de La Laguna
+    \end{center}
+  \end{scriptsize}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+  \frametitle{Índice}  
+  \tableofcontents[pausesections]
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\section{Motivación y Objetivos}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{Motivación}
+
+\begin{definicion}
+Especificar la motivación del trabajo
+\end{definicion}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{Objetivos }
+
+\begin{block}{Ejemplo}
+  \begin{itemize}
+  \item
+   Objetivo 1 
+  \pause
+
+  \item
+   Objetivo 2
+
+  \end{itemize}
+\end{block}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{Fundamentos Teóricos}
+
+\begin{frame}
+\frametitle{Fundamentos Teóricos}
+
+Se presentarán los antecedentes teóricos y prácticos que apoyan el tema objeto
+del trabajo.
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{Procedimiento experimental}
+
+\begin{frame}
+\frametitle{Procedimiento experimental}
+
+Ha de contar con secciones para la descripción de los experimentos y del material.
+También deber haber una sección para los resultados obtenidos y una última de
+análisis de los resultados obtenidos.
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Descripción de los experimentos}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Generación de datos aleatoria}
+
+\begin{ejemplo}
+  \begin{itemize}
+    \item <1-> Con semilla 1 
+    \item <2-> Con semilla 10 
+    \item <3> Sin semilla 
+  \end{itemize}
+\end{ejemplo}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Descripción del material}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Hardware y Software}
+
+\begin{ejemplo}
+  \begin{enumerate}
+    \item
+      Descripción del hardware 
+      \pause
+
+    \item
+      Descripción del software 
+  \end{enumerate}
+\end{ejemplo}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Resultados obtenidos}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Medidas de tiempo y Velocidad}
+
+%------------------------------------------------------------------------------
+\input{tables/table.tex}
+%------------------------------------------------------------------------------
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\subsection{Análisis de los resultados}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Diagrama del tiempo y la velocidad}
+
+%------------------------------------------------------------------------------
+\begin{figure}[!th]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{img/figura1.eps}
+\caption{Ejemplo de figura}
+\label{fig:1}
+\end{center}
+\end{figure}
+%------------------------------------------------------------------------------
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\section{Conclusiones}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Conclusiones}
+
+\begin{ejemplo}
+  \begin{enumerate}
+    \item
+      Conclusión 1
+      \pause
+    \item
+      Conclusión 2
+  \end{enumerate}
+\end{ejemplo}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+  \frametitle{Bibliografía}
+
+  \begin{thebibliography}{10}
+
+    \beamertemplatebookbibitems
+    \bibitem[URL: CTAN]{latex} 
+    CTAN. {\small $http://www.ctan.org/$}
+
+    \beamertemplatebookbibitems
+    \bibitem[Tantau, 2005]{beamer} 
+    Tantau, Till. 
+    \emph{User's Guide to the \beamer{} Class, Version 3.06, 2005} 
+    {\small $http://ctang.tug.org/tex-archive/macros/latex/contrib/beamer$}
+
+
+  \end{thebibliography}
+\end{frame}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\end{document}

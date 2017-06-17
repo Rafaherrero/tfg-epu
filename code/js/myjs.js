@@ -2,7 +2,7 @@ const loadJsonFile = require('load-json-file');
 
 //Variable to control the loading of json files
 //This variable has to set to false when packaging
-var desarrollo = false;
+var desarrollo = true;
 
 $(window).on('resize', function(){
     if (($(window).width() <= 1200)||($(window).height() <= 700)){
