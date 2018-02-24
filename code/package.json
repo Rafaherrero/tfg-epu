@@ -5,19 +5,12 @@
   "description": "Trabajo de Fin de Grado de Rafael Herrero Álvarez sobre el pensamiento computacional en estudios preuniversitarios utilizando los menús dietéticos como base",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "packwinx64": "electron-packager . --out=dist/winx64 --platform=win32 --arch=x64 --icon=img/donut.ico  --ignore=README.md --ignore=.gitignore --asar.unpackDir=json",
-    "packwinx32": "electron-packager . --out=dist/winx32 --platform=win32 --arch=ia32 --icon=img/donut.ico  --ignore=README.md --ignore=.gitignore --asar.unpackDir=json",
-    "packlinuxx64": "electron-packager . --out=dist/linuxx64 --platform=linux --arch=x64 --icon=img/donut.ico  --ignore=README.md --ignore=.gitignore --asar.unpackDir=json",
-    "packlinuxx32": "electron-packager . --out=dist/linuxx32 --platform=linux --arch=ia32 --icon=img/donut.ico  --ignore=README.md --ignore=.gitignore --asar.unpackDir=json"
+    "start": "electron ."
   },
   "repository": "https://github.com/rafaherrero/tfg-epu",
   "author": "Rafa Herrero",
   "devDependencies": {
-    "electron": "^1.6.2",
-    "electron-builder": "^18.3.5",
-    "electron-packager": "^8.7.0",
-    "electron-prebuilt": "^1.4.13"
+    "electron": "^1.6.2"
   },
   "dependencies": {
     "electron-dl": "^1.6.0",
