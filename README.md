@@ -1,7 +1,9 @@
+
+
 ![](https://raw.githubusercontent.com/Rafaherrero/tfg-epu/master/img/Comilona.png)
 Este repositorio contiene el código correspondiente a la aplicación Comilona, desarrollada para el Trabajo de Fin de Grado de Rafael Herrero Álvarez.
 
-## TFG: Una aproximación al pensamiento computacional a través de la nutrición
+# TFG: Una aproximación al pensamiento computacional a través de la nutrición
 
 En la actualidad, en estudios preuniversitarios se enseña computación siguiendo un modelo de alfabetización digital, es decir, se enseña como utilizar un procesador de texto, navegar por Internet, etc. Sin embargo, con este proyecto intentamos acercar conceptos más avanzados relacionados con el pensamiento computacional. En este caso buscamos enseñar conceptos de programación a través de la nutrición, utilizando un lenguaje de programación visual basado en Blockly.
 
@@ -92,9 +94,39 @@ La captura anterior muestra como se define el bloque para poner verduras en el p
 
 ## Uso de la versión portable
 
-Actualmente Comilona se encuentra en modo portable para Windows y sistemas Linux tanto de 32 bits como de 64 bits. Por el momento no hay versión portable para macOS, aunque sí en modo de desarrollo. Esta versión te permite ejecutar Comilona sin tener que instalar nada en tu máquina. Simplemente descarga el archivo correspondiente a tu sistema, descomprímelo y ejecuta 'Comilona.exe' si estas en Windows, o 'Comilona' si estas en Linux. Puedes encontrar los enlaces a los ficheros en el apartado de [*releases*](https://github.com/Rafaherrero/tfg-epu/releases/tag/1.0), o bajo estas líneas.
+Actualmente Comilona se encuentra en modo portable para Windows y sistemas Linux tanto de 32 bits como de 64 bits. Por el momento no hay versión portable para macOS, aunque sí en modo de desarrollo. Esta versión te permite ejecutar Comilona sin tener que instalar nada en tu máquina. Simplemente descarga el archivo correspondiente a tu sistema, descomprímelo y ejecutalo haciendo doble click sobre 'Comilona.exe' si estas en Windows, o 'Comilona' si estas en Linux. Puedes encontrar los enlaces a los ficheros en el apartado de [*releases*](https://github.com/Rafaherrero/tfg-epu/releases/tag/1.0), o bajo estas líneas.
 
 * [Comilona Windows 64 bits](https://github.com/Rafaherrero/tfg-epu/releases/download/1.0/Comilona.Windows.64bits.zip)
 * [Comilona Windows 32 bits](https://github.com/Rafaherrero/tfg-epu/releases/download/1.0/Comilona.Windows.32bits.zip)
 * [Comilona Linux 64 bits](https://github.com/Rafaherrero/tfg-epu/releases/download/1.0/Comilona.Linux.64bits.zip)
 * [Comilona Linux 32 bits](https://github.com/Rafaherrero/tfg-epu/releases/download/1.0/Comilona.Linux.32bits.zip)
+
+## Uso de Comilona
+
+El juego de Comilona es muy sencillo, pensado para niños de 8 a 12 años. La interfaz cuenta con tres partes como se muestra en la captura siguiente.
++ **A:** esta columna de la izquierda contiene el resultado formado por los bloques que se coloquen. Está dividida en 4 secciones:
+   - La parte superior contiene información sobre el reto que se ha de superar en el ejercicio.
+   - En la mitad encontramos el resultado gráfico del ejercicio.
+   - En la parte inferior se encuentran algunas de las frutas y verduras que se utilizan en Comilona.
+   - Por último, encontramos los botones de control:
+     - **Anterior:** nos permite volver al ejercicio anterior.
+     - **Play:** con el comprobamos la solución planteada.
+     - **Repetición:** nos permite repetir el ejercicio.
+     - **Siguiente:** avanza al siguiente ejercicio, o nivel, según si estamos ya en el último ejercicio de ese nivel.
+     - **Ayuda:** muestra la ventana de información que aparece al comienzo de cada ejercicio.
++ **B:** esta es la sección principal de Comilona, ya que se trata del área de trabajo de Blockly. Está formada por dos partes, una columna a la izquierda que contiene todos los bloques que se pueden utilizar en ese ejercicio, y otra a la derecha en blanco que es donde se irán colocando los bloques, según se arrastren desde la zona de la izquierda.
++ **C:** la barra inferior de Comilona nos indica en todo momento en que nivel y ejercicio nos encontramos y cual es el idioma actual, así como cambiarlo cualquiera de estos datos en todo momento.
+
+![](https://raw.githubusercontent.com/Rafaherrero/tfg-epu/master/img/ventanaprincipal.png)
+
+Comilona tiene un total de 13 ejercicios divididos en 3 niveles. En el nivel 1 veremos conceptos de programación como las secuencias. Avanzando, encontramos los bucles/repeticiones en el nivel 2. Para terminar, en el nivel 3 se introducen las funciones y los condicionales, así como se proponen retos mezclando todos los conceptos que se trabajan en Comilona.
+
+Para superar los ejercicios tenemos que arrastrar los bloques que se nos muestran en la columna de la derecha del área de trabajo (**B**), al área blanca justo a la derecha. Estos bloques tienen que ser los correctos, así como estar en el orden propuesto para dar por válida una solución, ya que no se mira únicamente el resultado sino también el procedimiento.
+
+Una vez entramos a cualquier ejercicio, vemos una ventana informativa como la que se encuentra bajo estas líneas. Tendremos que cerrarla y resolver el ejercicio como se nos pide en dicha ventana, que podremos abrir en todo momento pulsando el botón '?'. Una vez terminemos, pulsamos sobre el botón '►' y Comilona se encargará de mostrarnos visualmente que salida produce nuestra propuesta. Al terminar, se muestra una ventana informativa que nos dirá si hemos superado el reto o no, dándonos la oportunidad de ir al ejercicio anterior, repetir este o ir al siguiente.
+
+![](https://raw.githubusercontent.com/Rafaherrero/tfg-epu/master/img/ventanainformativa.png)
+
+## Contacto
+
+LinkedIn: [Rafael Herrero Álvarez](https://www.linkedin.com/in/rafaherrero/)
