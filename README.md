@@ -92,7 +92,7 @@ Si se quiere crear bloques personalizados, tenemos que hacer uso de la herramien
 
 La captura anterior muestra como se define el bloque para poner verduras en el plato. Bajo el directorio "code/blocks" se encuentran dos ficheros ".xml" que contienen la definición de los bloques usados en Comilona, tanto en español como en inglés, y que podemos cargar en la herramienta [Blockly Developer Tools](https://blockly-demo.appspot.com/static/demos/blockfactory/index.html) haciendo uso del botón "Import Block Library".
 
-## Uso de la versión portable
+## Versión portable
 
 Actualmente Comilona se encuentra en modo portable para Windows y sistemas Linux tanto de 32 bits como de 64 bits. Por el momento no hay versión portable para macOS, aunque sí en modo de desarrollo. Esta versión te permite ejecutar Comilona sin tener que instalar nada en tu máquina. Simplemente descarga el archivo correspondiente a tu sistema, descomprímelo y ejecutalo haciendo doble click sobre 'Comilona.exe' si estas en Windows, o 'Comilona' si estas en Linux. Puedes encontrar los enlaces a los ficheros en el apartado de [*releases*](https://github.com/Rafaherrero/tfg-epu/releases/tag/1.0), o bajo estas líneas.
 
