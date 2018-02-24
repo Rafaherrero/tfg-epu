@@ -74,15 +74,15 @@ En los apartados anteriores se explicó como instalar todo lo necesario para uti
 	 
       .
       └── code             # Carpeta principal con el código
-	      ├── blocks       # Contiene la definición de los bloques personalizados de Blocky
-	      ├── css          # Contiene los ficheros de estilo CSS
-	      ├── img          # Contiene los recursos relacionados con imágenes
-	      ├── js           # Contiene todo lo relacionado con el código Javascript
-		      ├── blocky   # Contiene los ficheros de Blockly
-		      ├── js_int.  # Intérprete de Javascript
-		      ├── level x  # Javascript para la corrección de los ejercicios
-		  ├── json         # Textos mostrados en Comilona, tanto en español como en inglés
-		  └── video        # Contiene los vídeos de los ejercicios
+	  ├── blocks       # Contiene la definición de los bloques personalizados de Blocky
+	  ├── css          # Contiene los ficheros de estilo CSS
+	  ├── img          # Contiene los recursos relacionados con imágenes
+	  ├── js           # Contiene todo lo relacionado con el código Javascript
+	      ├── blocky   # Contiene los ficheros de Blockly
+	      ├── js_int.  # Intérprete de Javascript
+	      ├── level x  # Javascript para la corrección de los ejercicios
+	  ├── json         # Textos mostrados en Comilona, tanto en español como en inglés
+	  └── video        # Contiene los vídeos de los ejercicios
 
 ### Creación de bloques 
 
