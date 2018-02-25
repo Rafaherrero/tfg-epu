@@ -127,6 +127,13 @@ Una vez entramos a cualquier ejercicio, vemos una ventana informativa como la qu
 
 ![](https://raw.githubusercontent.com/Rafaherrero/tfg-epu/master/img/ventanainformativa.png)
 
+## Enlaces 
+
+Además de esta guía, también se han elaborado una serie de vídeos y documentos relacionados con Comilona, su instalación, su uso, etc.
+* [Descripción de Comilona](https://github.com/Rafaherrero/tfg-epu/raw/master/bib/Comilona.pdf): descripción del juego en español.
+* [Vídeo demostrativo de uso](https://www.youtube.com/watch?v=owxvBwSDFY8): este vídeo sirve para enseñar cómo funciona Comilona como juego en versión portable y sin necesidad de instalar nada.
+* [Vídeo demostrativo de instalación](https://www.youtube.com/watch?v=rRPOOkqhIFU): este vídeo muestra como instalar Comilona en nuestro ordenador si decidimos utilizarlo con fines de desarrollo.
+
 ## Contacto
 
 LinkedIn: [Rafael Herrero Álvarez](https://www.linkedin.com/in/rafaherrero/)
