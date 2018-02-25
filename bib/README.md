@@ -3,10 +3,8 @@
 Contenido del directorio:
 
       .
-      ├── beameruserguide.pdf             # Guía de usuario de BEAMER
-      ├── Merelo-Tricas.pdf               # En defensa de los TFG 
-      ├── lshort.pdf                      # Manual de LaTeX
-      ├── Jeopardy.pdf
-      ├── Nutrition.pdf
-      └── Scattegories.pdf
+      ├── Comilona.pdf		# Documento sobre Comilona
+      ├── Jeopardy.pdf		# Juego de nutrición basado en Jeopardy
+      ├── Nutrition.pdf		# Juego sobre agricultura y nutrición
+      └── Scattegories.pdf	# Juego de nutrición basado en Scattegories
 
