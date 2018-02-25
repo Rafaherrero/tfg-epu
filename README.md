@@ -13,9 +13,10 @@ La estructura de este repositorio es la siguiente:
 
       .
       ├── bib          # Artículos relacionados con el proyecto
+      ├── code         # Código fuente
+      ├── img          # Imágenes para la guía de este README
       ├── mem          # Memoria del trabajo
-      ├── pres         # Presentación del trabajo
-      └── code         # Código fuente 
+      └── pres         # Presentación del trabajo 
 
 ## Instalación y uso del modo desarrollador
 En este apartado se describen los pasos para instalar todos los componentes necesarios para poder acceder al modo de desarrollo de Comilona. Sin embargo, si lo que quiere es simplemente utilizar Comilona, en este mismo repositorio se aloja la versión portable con la que no tendrá que instalar nada en su equipo. En el siguiente apartado se encuentran los enlaces al mismo.
@@ -130,7 +131,7 @@ Una vez entramos a cualquier ejercicio, vemos una ventana informativa como la qu
 ## Enlaces 
 
 Además de esta guía, también se han elaborado una serie de vídeos y documentos relacionados con Comilona, su instalación, su uso, etc.
-* [Descripción de Comilona](https://github.com/Rafaherrero/tfg-epu/raw/master/bib/Comilona.pdf): descripción del juego en español.
+* [Descripción de Comilona](https://github.com/Rafaherrero/tfg-epu/raw/master/bib/TECNOEDU.%20Comilona.%20Rafael%20Herrero%20%C3%81lvarez.pdf): descripción del juego en español.
 * [Vídeo demostrativo de uso](https://www.youtube.com/watch?v=owxvBwSDFY8): este vídeo sirve para enseñar cómo funciona Comilona como juego en versión portable y sin necesidad de instalar nada.
 * [Vídeo demostrativo de instalación](https://www.youtube.com/watch?v=rRPOOkqhIFU): este vídeo muestra como instalar Comilona en nuestro ordenador si decidimos utilizarlo con fines de desarrollo.
 
