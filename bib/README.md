@@ -6,5 +6,5 @@ Contenido del directorio:
       ├── Comilona.pdf        # Documento sobre Comilona
       ├── Jeopardy.pdf        # Juego de nutrición basado en Jeopardy
       ├── Nutrition.pdf       # Juego sobre agricultura y nutrición
-      └── Scattegories.pdf    # Juego de nutrición basado en Scattegories
-
+      ├── Scattegories.pdf    # Juego de nutrición basado en Scattegories
+      └── TECNOEDU...pdf      # Documento I Premios TECNOEDU 2017
